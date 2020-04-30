@@ -1,0 +1,51 @@
+.container {
+	position: absolute;
+	z-index: 1;
+	height: 10vh;
+	width: 100%;
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.mobileContainer {
+	display: none;
+}
+
+.brand {
+	margin-left: 1vw;
+	height: 5vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.brand > img {
+}
+
+.routes {
+	display: flex;
+	flex-direction: row;
+}
+
+.links,
+.linksbtn {
+	text-decoration: none;
+	margin-right: 2vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-size: 2vh;
+}
+
+.linksbtn {
+	background-color: #d3d3d3;
+	height: 5vh;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	cursor: pointer;
+}
