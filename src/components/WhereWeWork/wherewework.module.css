@@ -1,18 +1,3 @@
-.container {
-	position: relative;
-}
-
-.content {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	background-color: #bcbcbc;
-	width: 100%;
-	padding-top: 10vh;
-	padding-bottom: 10vh;
-}
-
 .animationContainer {
 	display: flex;
 	flex-direction: column;
