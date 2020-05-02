@@ -15,15 +15,15 @@
 }
 
 .brand {
-	margin-left: 1vw;
-	height: 5vh;
+	margin-left: 3vw;
+	height: 7vh;
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
-	align-items: center;
+	align-self: flex-end;
 }
 
 .brand > img {
+	height: 100%;
 }
 
 .routes {
@@ -41,10 +41,13 @@
 	justify-content: center;
 	align-items: center;
 	font-size: 2vh;
+	font-family: 'Poppins';
+	color: var(--black);
 }
 
 .linksbtn {
-	background-color: #d3d3d3;
+	background-color: var(--secondary);
+	border-radius: 10px;
 	height: 5vh;
 	padding-left: 1vw;
 	padding-right: 1vw;

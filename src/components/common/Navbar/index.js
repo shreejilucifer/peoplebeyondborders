@@ -9,7 +9,7 @@ const Route = ({ path, text }) => (
 
 const Brand = () => (
 	<div className={styles.brand}>
-		<img alt="People Beyond Borders" />
+		<img src="/images/logo.png" alt="People Beyond Borders" />
 	</div>
 );
 

@@ -10,14 +10,33 @@ import Footer from '../src/components/common/Footer';
 import DarkSection from '../src/components/common/DarkSection';
 import LightSection from '../src/components/common/LightSection';
 
-import AboutUs from '../src/components/Landing/AboutUs';
-
 const IndexPage = () => {
 	return (
 		<div className={styles.wrapper}>
 			<Navbar />
 			<HeroCarousel />
-			<AboutUs />
+
+			<LightSection>
+				<WhatWeDo />
+			</LightSection>
+
+			<DarkSection>
+				<WhereWeWork />
+			</DarkSection>
+
+			<LightSection>
+				<HowWeCreateImpact />
+			</LightSection>
+
+			<DarkSection>
+				<WhyItMatters />
+			</DarkSection>
+
+			<LightSection>
+				<DisplacedTypes />
+			</LightSection>
+
+			<Footer />
 		</div>
 	);
 };

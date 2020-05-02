@@ -16,8 +16,24 @@
 @font-face {
 	font-family: 'GilroyExtraBold';
 	src: url('/fonts/Gilroy-ExtraBold.woff');
-}
+} */
 
 :root {
-	--layout-bg-color: coral;
-} */
+	--primary: #53bbd5;
+	--secondary: #b7d335;
+	--black: #000000;
+	--white: #ffffff;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Muli&family=Poppins:wght@600&family=Rubik:wght@400;700&display=swap');
+body::-webkit-scrollbar {
+	display: none;
+}
+
+body::-webkit-scrollbar-track {
+	display: none;
+}
+
+body::-webkit-scrollbar-thumb {
+	display: none;
+}
