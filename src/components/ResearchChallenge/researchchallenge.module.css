@@ -1,0 +1,10 @@
+.imageContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 25vh;
+	width: 25vw;
+	margin-bottom: 3vh;
+	border: 1px solid black;
+}

@@ -1,0 +1,45 @@
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-left: 5vw;
+	padding-right: 5vw;
+}
+
+.imageContainer {
+	margin-top: 3vh;
+	margin-bottom: 3vh;
+	height: 30vh;
+	width: 50vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid black;
+}
+
+.postContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 3vh;
+}
+
+.postContainer:nth-child(even) {
+	flex-direction: row-reverse;
+}
+
+.postContent {
+	width: 50%;
+}
+
+.postTitle {
+	font-size: 3vh;
+}
+
+.postImage {
+	width: 50%;
+	text-align: center;
+}
