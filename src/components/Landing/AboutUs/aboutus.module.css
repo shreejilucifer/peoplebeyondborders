@@ -8,9 +8,9 @@
 
 .title {
 	color: var(--black);
-	font-size: 7vh;
+	font-size: 3.5rem;
 	font-family: 'Rubik';
-	font-weight: bold;
+	font-weight: 500;
 	margin-bottom: 5vh;
 	text-align: center;
 }
@@ -41,23 +41,23 @@
 
 .itemTitle {
 	color: var(--black);
-	font-size: 2.5vh;
+	font-size: 1.5rem;
 	font-family: 'Poppins';
 	margin-bottom: 2vh;
 }
 
 .itemNumbers {
-	font-size: 6vh;
+	font-size: 3.3rem;
 	font-family: 'Poppins';
 	color: var(--primary);
 }
 
 .content {
 	width: 75%;
-	font-size: 3vh;
+	font-size: 1.5rem;
+	font-family: 'Muli';
 	text-align: center;
 	margin-bottom: 5vh;
-	font-family: 'Muli';
 }
 
 .linkbtn {
@@ -74,4 +74,5 @@
 	padding-right: 1vw;
 	cursor: pointer;
 	width: 10vw;
+	margin-bottom: 10vh;
 }

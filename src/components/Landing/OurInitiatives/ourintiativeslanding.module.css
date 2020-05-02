@@ -1,0 +1,74 @@
+.container {
+	width: 100%;
+	height: 100vh;
+	background-image: url(/images/our-initiatives-bg.png);
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.title {
+	margin-top: 18vh;
+	font-size: 3.5rem;
+	color: var(--white);
+	font-weight: 500;
+	font-family: 'Rubik';
+	margin-bottom: 5vh;
+}
+
+.grid {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 80%;
+}
+
+.cardContainer {
+	width: 30%;
+	background-color: var(--white);
+	border-radius: 15px;
+	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.cardImage {
+	margin-top: 10vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	margin-bottom: 2vh;
+}
+
+.cardTitle {
+	font-family: 'Muli';
+	font-weight: bold;
+	text-align: center;
+	font-size: 1.5rem;
+	margin-bottom: 1vh;
+}
+
+.underline {
+	width: 30%;
+	height: 0.8vh;
+	background-color: var(--primary);
+	border-radius: 10px;
+	margin-bottom: 3vh;
+}
+
+.cardContent {
+	height: 3.1rem;
+	overflow-y: hidden;
+	width: 90%;
+	margin-bottom: 5vh;
+	font-family: 'Muli';
+	color: var(--black);
+	text-align: center;
+}
