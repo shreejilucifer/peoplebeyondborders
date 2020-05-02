@@ -79,3 +79,25 @@
 	opacity: 0.8;
 	color: var(--black);
 }
+
+@media only screen and (max-width: 768px) {
+	.routes {
+		width: 100%;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		margin-bottom: 3vh;
+	}
+	.brand {
+		margin-bottom: 3vh;
+	}
+	.links {
+		margin-bottom: 2vh;
+		width: 50%;
+	}
+	.links:nth-last-child(1) {
+		margin-bottom: 0vh;
+	}
+	.social {
+		width: 100%;
+	}
+}

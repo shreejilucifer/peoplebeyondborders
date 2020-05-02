@@ -72,3 +72,30 @@
 	color: var(--black);
 	text-align: center;
 }
+
+@media only screen and (max-width: 768px) {
+	.container {
+		background-image: none;
+		background-color: var(--primary);
+		height: auto;
+	}
+	.title {
+		color: var(--black);
+		margin-top: 3vh;
+	}
+	.grid {
+		flex-direction: column;
+		width: 100%;
+	}
+	.cardContainer {
+		width: 95%;
+		margin-bottom: 3vh;
+	}
+	.cardImage {
+		margin-top: 1vh;
+		height: 50%;
+	}
+	.cardImage > img {
+		width: 50%;
+	}
+}

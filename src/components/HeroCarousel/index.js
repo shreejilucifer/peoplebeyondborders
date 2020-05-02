@@ -15,7 +15,7 @@ const HeroCarousel = () => {
 			</div>
 			<img
 				src="/images/banner.png"
-				srcset="/images/banner@2x.png 2x,images/banner@3x.png 3x"
+				srcSet="/images/banner@2x.png 2x,images/banner@3x.png 3x"
 				alt="banner"
 			/>
 		</div>

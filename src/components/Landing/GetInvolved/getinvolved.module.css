@@ -68,3 +68,18 @@
 	border-radius: 1rem;
 	cursor: pointer;
 }
+
+@media only screen and (max-width: 768px) {
+	.container {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+	.linksContainer {
+		width: 95%;
+	}
+	.title {
+		align-self: center;
+		text-align: center;
+	}
+}

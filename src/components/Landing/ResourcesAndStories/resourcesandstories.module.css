@@ -124,3 +124,31 @@
 	width: 12vw;
 	cursor: pointer;
 }
+
+@media only screen and (max-width: 768px) {
+	.container {
+		width: 100%;
+		margin-top: 5vh;
+	}
+	.grid {
+		flex-direction: column;
+	}
+
+	.column {
+		width: 100%;
+	}
+	.horizontalCard,
+	.verticalCard {
+		background-position: center;
+	}
+	.verticalCardContainer {
+		width: 100%;
+		height: 30vh;
+	}
+	.verticalCardLinkbtn {
+		width: 25%;
+	}
+	.linkbtn {
+		width: 40vw;
+	}
+}
