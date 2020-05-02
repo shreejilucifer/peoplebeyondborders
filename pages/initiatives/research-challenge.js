@@ -1,20 +1,20 @@
 import Navbar from '../../src/components/common/Navbar';
 import Footer from '../../src/components/common/Footer';
 import LightSection from '../../src/components/common/LightSection';
-import HeroCarousel from '../../src/components/HeroCarousel';
-import WhyItMatters from '../src/components/WhyItMatters';
+import HeroCarousel from '../../src/components/common/HeroCarousel';
+import { Challenge } from '../../src/components/ResearchChallenge';
 
-const WhyItMattersPage = () => {
+const ReasearchChallengePage = () => {
 	return (
 		<div>
 			<Navbar />
 			<HeroCarousel />
 			<LightSection>
-				<WhyItMatters />
+				<Challenge />
 			</LightSection>
 			<Footer />
 		</div>
 	);
 };
 
-export default WhyItMattersPage;
+export default ReasearchChallengePage;

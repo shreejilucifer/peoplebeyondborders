@@ -1,7 +1,7 @@
-import Navbar from '../../src/components/common/Navbar';
-import Footer from '../../src/components/common/Footer';
-import LightSection from '../../src/components/common/LightSection';
-import HeroCarousel from '../../src/components/HeroCarousel';
+import Navbar from '../src/components/common/Navbar';
+import Footer from '../src/components/common/Footer';
+import LightSection from '../src/components/common/LightSection';
+import HeroCarousel from '../src/components/common/HeroCarousel';
 import HowWeCreateImpact from '../src/components/HowWeCreateImpact';
 
 const HowWeCreateImpactPage = () => {

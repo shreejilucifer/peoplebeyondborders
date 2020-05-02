@@ -1,16 +1,16 @@
 import styles from '../src/styles/indexpage.module.css';
-import Navbar from '../../src/components/common/Navbar';
-import HeroCarousel from '../../src/components/HeroCarousel';
+import Navbar from '../src/components/common/Navbar';
+import HeroCarousel from '../src/components/common/HeroCarousel';
 import WhatWeDo from '../src/components/WhatWeDo';
 import WhereWeWork from '../src/components/WhereWeWork';
 import HowWeCreateImpact from '../src/components/HowWeCreateImpact';
 import WhyItMatters from '../src/components/WhyItMatters';
 import DisplacedTypes from '../src/components/DisplacedTypes';
-import Footer from '../../src/components/common/Footer';
-import DarkSection from '../../src/components/common/DarkSection';
-import LightSection from '../../src/components/common/LightSection';
+import Footer from '../src/components/common/Footer';
+import DarkSection from '../src/components/common/DarkSection';
+import LightSection from '../src/components/common/LightSection';
 
-const IndexPage = () => {
+const DiscoverUsPage = () => {
 	return (
 		<div className={styles.wrapper}>
 			<Navbar />
@@ -41,4 +41,4 @@ const IndexPage = () => {
 	);
 };
 
-export default IndexPage;
+export default DiscoverUsPage;
