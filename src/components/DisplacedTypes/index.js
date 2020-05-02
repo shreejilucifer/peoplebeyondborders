@@ -1,5 +1,4 @@
 import styles from './displacedtypes.module.css';
-import LightSection from '../common/LightSection';
 import { SubTitle, Content } from '../common/Typography';
 import Link from 'next/link';
 
@@ -12,7 +11,7 @@ const Type = ({ caption }) => (
 
 const DisplacedTypes = () => {
 	return (
-		<LightSection>
+		<React.Fragment>
 			<SubTitle>Over half of all displaced people are children</SubTitle>
 			<div className={styles.typesContainer}>
 				<Type caption="Separated from Families" />
@@ -49,7 +48,7 @@ const DisplacedTypes = () => {
 					<a>Get Involved</a>
 				</Link>
 			</Content>
-		</LightSection>
+		</React.Fragment>
 	);
 };
 

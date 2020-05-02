@@ -1,10 +1,9 @@
 import styles from './whyitmatters.module.css';
-import DarkSection from '../common/DarkSection';
 import { Title, Content } from '../common/Typography';
 
 const WhyItMatters = () => {
 	return (
-		<DarkSection>
+		<React.Fragment>
 			<Title>Why It Matters</Title>
 			<div className={styles.imageContainer}>
 				<img alt="why-it-matters" />
@@ -21,7 +20,7 @@ const WhyItMatters = () => {
 				disasters, climate change, environmental issues, conflicts, persecution
 				and violence of all forms.
 			</Content>
-		</DarkSection>
+		</React.Fragment>
 	);
 };
 

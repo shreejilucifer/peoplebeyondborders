@@ -1,10 +1,9 @@
 import styles from './howwecreateimpact.module.css';
 import { Title, Content } from '../common/Typography';
-import LightSection from '../common/LightSection';
 
 const HowWeCreateImpact = () => {
 	return (
-		<LightSection>
+		<React.Fragment>
 			<Title>How We Create Impact</Title>
 			<Content>
 				People Beyond Borders is a bridge, co-creating safe spaces and
@@ -78,7 +77,7 @@ const HowWeCreateImpact = () => {
 					<img alt="inclusive-practices" />
 				</div>
 			</div>
-		</LightSection>
+		</React.Fragment>
 	);
 };
 

@@ -7,17 +7,35 @@ import HowWeCreateImpact from '../src/components/HowWeCreateImpact';
 import WhyItMatters from '../src/components/WhyItMatters';
 import DisplacedTypes from '../src/components/DisplacedTypes';
 import Footer from '../src/components/common/Footer';
+import DarkSection from '../src/components/common/DarkSection';
+import LightSection from '../src/components/common/LightSection';
 
 const IndexPage = () => {
 	return (
 		<div className={styles.wrapper}>
 			<Navbar />
 			<HeroCarousel />
-			<WhatWeDo />
-			<WhereWeWork />
-			<HowWeCreateImpact />
-			<WhyItMatters />
-			<DisplacedTypes />
+
+			<LightSection>
+				<WhatWeDo />
+			</LightSection>
+
+			<DarkSection>
+				<WhereWeWork />
+			</DarkSection>
+
+			<LightSection>
+				<HowWeCreateImpact />
+			</LightSection>
+
+			<DarkSection>
+				<WhyItMatters />
+			</DarkSection>
+
+			<LightSection>
+				<DisplacedTypes />
+			</LightSection>
+
 			<Footer />
 		</div>
 	);

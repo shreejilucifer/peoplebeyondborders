@@ -1,10 +1,9 @@
 import styles from './whatwedo.module.css';
 import { Title, SubTitle, Content } from '../common/Typography';
-import LightSection from '../common/LightSection';
 
 const WhatWeDo = () => {
 	return (
-		<LightSection>
+		<React.Fragment>
 			<Title>What we do</Title>
 			<SubTitle>
 				Self-empowerment of displaced communities and refugees is our call to
@@ -21,7 +20,7 @@ const WhatWeDo = () => {
 				refugees by channelizing resilience, creative strength, skill sets and
 				sustainable networks to empower themselves and the world around them.
 			</Content>
-		</LightSection>
+		</React.Fragment>
 	);
 };
 
