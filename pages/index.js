@@ -6,6 +6,7 @@ import WhereWeWork from '../src/components/WhereWeWork';
 import HowWeCreateImpact from '../src/components/HowWeCreateImpact';
 import WhyItMatters from '../src/components/WhyItMatters';
 import DisplacedTypes from '../src/components/DisplacedTypes';
+import Footer from '../src/components/common/Footer';
 
 const IndexPage = () => {
 	return (
@@ -17,6 +18,7 @@ const IndexPage = () => {
 			<HowWeCreateImpact />
 			<WhyItMatters />
 			<DisplacedTypes />
+			<Footer />
 		</div>
 	);
 };
