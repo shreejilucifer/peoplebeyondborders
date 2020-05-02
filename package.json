@@ -12,7 +12,11 @@
 	"author": "Shreeji Pedhadiya",
 	"license": "ISC",
 	"dependencies": {
+		"imagemin-optipng": "^7.1.0",
+		"lqip-loader": "^2.2.0",
 		"next": "^9.3.6",
+		"next-compose-plugins": "^2.2.0",
+		"next-optimized-images": "^2.6.0",
 		"react": "^16.13.1",
 		"react-dom": "^16.13.1",
 		"react-responsive-carousel": "^3.2.5"
