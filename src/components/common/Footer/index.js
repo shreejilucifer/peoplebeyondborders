@@ -10,10 +10,9 @@ const Route = ({ path, text }) => (
 const Footer = () => {
 	return (
 		<div className={styles.container}>
-			<img src="/clips/upperclip.svg" className={styles.upperclip} />
 			<div className={styles.content}>
 				<div className={styles.brand}>
-					<img alt="people beyond borders" />
+					<img src="/images/logo.png" alt="people beyond borders" />
 				</div>
 				<div className={styles.routes}>
 					<Route path="/discoverus" text="Discover us" />
@@ -23,18 +22,34 @@ const Footer = () => {
 					<Route path="/connectwithus" text="Connect with us" />
 				</div>
 				<div className={styles.social}>
-					<div className={styles.icons}>
-						<img alt="social" />
-					</div>
-					<div className={styles.icons}>
-						<img alt="social" />
-					</div>
-					<div className={styles.icons}>
-						<img alt="social" />
-					</div>
-					<div className={styles.icons}>
-						<img alt="social" />
-					</div>
+					<a
+						className={styles.icons}
+						href="https://facebook.com/"
+						target="_blank"
+					>
+						<img alt="social" src="/images/facebook.png" />
+					</a>
+					<a
+						className={styles.icons}
+						href="https://instagram.com/"
+						target="_blank"
+					>
+						<img alt="social" src="/images/instagram.png" />
+					</a>
+					<a
+						className={styles.icons}
+						href="https://youtube.com/"
+						target="_blank"
+					>
+						<img alt="social" src="/images/youtube.png" />
+					</a>
+					<a
+						className={styles.icons}
+						href="https://linkedin.com/"
+						target="_blank"
+					>
+						<img alt="social" src="/images/linkedin.png" />
+					</a>
 				</div>
 				<div className={styles.copyright}>
 					© {new Date().getFullYear()} People Beyond Borders All rights reserved

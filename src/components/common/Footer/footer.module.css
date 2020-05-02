@@ -1,10 +1,14 @@
-.upperclip {
-	transform: translateY(0.5vh);
+.container {
+	background-image: url(/images/footer-bg.png);
+	height: 60vh;
+	background-position: top;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
 }
 
 .content {
-	padding-top: 1vh;
-	background-color: #bcbcbc;
 	padding-left: 5vw;
 	padding-right: 5vw;
 	display: flex;
@@ -14,14 +18,17 @@
 }
 
 .brand {
-	border: 1px solid black;
 	height: 10vh;
 	width: 20vw;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 3vh;
+	margin-bottom: 5vh;
+}
+
+.brand img {
+	height: 100%;
 }
 
 .routes {
@@ -30,7 +37,7 @@
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
-	margin-bottom: 3vh;
+	margin-bottom: 5vh;
 }
 
 .links {
@@ -41,6 +48,9 @@
 	justify-content: center;
 	align-items: center;
 	font-size: 2vh;
+	color: var(--var);
+	cursor: pointer;
+	font-family: 'Muli';
 }
 
 .social {
@@ -49,11 +59,10 @@
 	justify-content: space-around;
 	align-items: center;
 	width: 50%;
-	margin-bottom: 3vh;
+	margin-bottom: 5vh;
 }
 
 .icons {
-	border: 1px solid black;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -61,6 +70,12 @@
 	height: 5vh;
 }
 
+.icons img {
+	height: 100%;
+}
 .copyright {
-	margin-bottom: 3vh;
+	margin-bottom: 2vh;
+	font-family: 'Muli';
+	opacity: 0.8;
+	color: var(--black);
 }

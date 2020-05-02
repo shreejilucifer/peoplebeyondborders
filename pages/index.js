@@ -4,6 +4,8 @@ import HeroCarousel from '../src/components/HeroCarousel';
 import AboutUs from '../src/components/Landing/AboutUs';
 import OurInitiatives from '../src/components/Landing/OurInitiatives';
 import ResourcesAndStories from '../src/components/Landing/ResourcesAndStories';
+import GetInvolved from '../src/components/Landing/GetInvolved';
+import Footer from '../src/components/common/Footer';
 
 const IndexPage = () => {
 	return (
@@ -13,6 +15,8 @@ const IndexPage = () => {
 			<AboutUs />
 			<OurInitiatives />
 			<ResourcesAndStories />
+			<GetInvolved />
+			<Footer />
 		</div>
 	);
 };
