@@ -13,11 +13,7 @@ const HeroCarousel = () => {
 				</div>
 				<div className={styles.learnmore}>Learn more</div>
 			</div>
-			<img
-				src="/images/banner.png"
-				srcSet="/images/banner@2x.png 2x,images/banner@3x.png 3x"
-				alt="banner"
-			/>
+			<img src={require('../../../images/banner.png')} alt="banner" />
 		</div>
 	);
 };

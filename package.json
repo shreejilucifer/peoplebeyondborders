@@ -19,6 +19,7 @@
 		"next-optimized-images": "^2.6.0",
 		"react": "^16.13.1",
 		"react-dom": "^16.13.1",
-		"react-responsive-carousel": "^3.2.5"
+		"react-responsive-carousel": "^3.2.5",
+		"webp-loader": "^0.6.0"
 	}
 }
