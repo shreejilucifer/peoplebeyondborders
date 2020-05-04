@@ -5,7 +5,8 @@
 	justify-content: center;
 	align-items: center;
 	margin: auto;
-	margin-top: 10vh;
+	margin-top: 5vh;
+	margin-bottom: 5vh;
 }
 
 .title {
@@ -110,7 +111,6 @@
 
 .linkbtn {
 	margin-top: 5vh;
-	margin-bottom: 10vh;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -141,9 +141,19 @@
 	.verticalCard {
 		background-position: center;
 	}
+	.horizontalCardCountry,
+	.verticalCardCountry {
+		font-size: 3vh;
+	}
+	.horizontalCardTitle,
+	.verticalCardTitle {
+		font-size: 4.5vh;
+	}
 	.verticalCardContainer {
 		width: 100%;
 		height: 30vh;
+		min-height: 30vh;
+		max-height: 30vh;
 	}
 	.verticalCardLinkbtn {
 		width: 25%;
