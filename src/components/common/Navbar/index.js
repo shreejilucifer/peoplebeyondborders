@@ -1,52 +1,70 @@
-import styles from './navbar.module.css';
+import {
+	Wrapper,
+	Container,
+	BrandContainer,
+	Routes,
+	Links,
+	LinksButton,
+	MobileContainer,
+	Hamburger,
+	DrawerContainer,
+} from './styles';
 import Link from 'next/link';
 import { useState } from 'react';
 
 const Route = ({ path, text }) => (
 	<Link href={path}>
-		<a className={styles.links}>{text}</a>
+		<Links>{text}</Links>
 	</Link>
 );
 
 const Brand = () => (
-	<div className={styles.brand}>
+	<BrandContainer>
 		<img src="/images/logo.png" alt="People Beyond Borders" />
-	</div>
+	</BrandContainer>
 );
 
 const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	return (
-		<div className={styles.wrapper}>
-			<div className={styles.container}>
+		<Wrapper>
+			<Container>
 				<Brand />
-				<div className={styles.routes}>
+				<Routes>
 					<Route path="/discoverus" text="Discover us" />
 					<Route path="/ourinitiatives" text="Our Initiatives" />
 					<Route path="/resourcesandstories" text="Resources and Stories" />
 					<Route path="/ourteam" text="Our Team" />
 					<Route path="/connectwithus" text="Connect with us" />
-					<div className={styles.linksbtn}>Get Involved</div>
-				</div>
-			</div>
-			<div className={styles.mobileContainer}>
-				<div className={styles.hamburger} onClick={() => setIsOpen(!isOpen)}>
+					<LinksButton>Get Involved</LinksButton>
+				</Routes>
+			</Container>
+			<MobileContainer>
+				<Hamburger onClick={() => setIsOpen(!isOpen)}>
 					<div></div>
 					<div></div>
 					<div></div>
-				</div>
+				</Hamburger>
 				{isOpen === true ? (
-					<div className={styles.drawerContainer}>
+					<DrawerContainer>
+						<div>
+							<Brand />
+							<Hamburger onClick={() => setIsOpen(!isOpen)}>
+								<div></div>
+								<div></div>
+								<div></div>
+							</Hamburger>
+						</div>
 						<Route path="/discoverus" text="Discover us" />
 						<Route path="/ourinitiatives" text="Our Initiatives" />
 						<Route path="/resourcesandstories" text="Resources and Stories" />
 						<Route path="/ourteam" text="Our Team" />
 						<Route path="/connectwithus" text="Connect with us" />
-						<div className={styles.linksbtn}>Get Involved</div>
-					</div>
+						<LinksButton>Get Involved</LinksButton>
+					</DrawerContainer>
 				) : null}
-			</div>
-		</div>
+			</MobileContainer>
+		</Wrapper>
 	);
 };
 

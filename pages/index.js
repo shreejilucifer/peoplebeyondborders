@@ -1,4 +1,4 @@
-import styles from '../src/styles/indexpage.module.css';
+import Head from 'next/head';
 import Navbar from '../src/components/common/Navbar';
 import HeroCarousel from '../src/components/common/HeroCarousel';
 import AboutUs from '../src/components/Landing/AboutUs';
@@ -9,7 +9,10 @@ import Footer from '../src/components/common/Footer';
 
 const IndexPage = () => {
 	return (
-		<div className={styles.wrapper}>
+		<div>
+			<Head>
+				<title>People Beyond Borders</title>
+			</Head>
 			<Navbar />
 			<HeroCarousel />
 			<AboutUs />
@@ -22,3 +25,9 @@ const IndexPage = () => {
 };
 
 export default IndexPage;
+
+/*
+
+
+
+*/
