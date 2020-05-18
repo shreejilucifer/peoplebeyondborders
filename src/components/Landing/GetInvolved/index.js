@@ -10,6 +10,7 @@ const LinkItem = ({ title, link }) => (
 const GetInvolved = () => {
 	return (
 		<div className={styles.container}>
+			<div className={styles.mobiletitle}>Get Involved</div>
 			<div className={styles.imageContainer}>
 				<img src="/images/getinvolved-main.png" alt="get involved" />
 			</div>

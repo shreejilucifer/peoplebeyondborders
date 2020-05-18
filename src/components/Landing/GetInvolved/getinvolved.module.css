@@ -23,13 +23,18 @@
 	justify-self: center;
 }
 
-.title {
+.title,
+.mobiletitle {
 	font-size: 3.5rem;
 	font-weight: 500;
 	font-family: 'Rubik';
 	text-align: left;
 	color: var(--black);
 	margin-bottom: 3vh;
+}
+
+.mobiletitle {
+	display: none;
 }
 
 .cardContainer {
@@ -69,17 +74,25 @@
 	cursor: pointer;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 425px) {
 	.container {
 		display: flex;
-		flex-direction: column-reverse;
+		flex-direction: column;
 		align-items: center;
+		margin-bottom: 0;
 	}
 	.linksContainer {
 		width: 95%;
 	}
 	.title {
+		display: none;
 		align-self: center;
 		text-align: center;
+	}
+	.mobiletitle {
+		display: inline;
+	}
+	.imageContainer {
+		margin-bottom: 5vh;
 	}
 }
