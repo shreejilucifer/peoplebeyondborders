@@ -1,21 +1,32 @@
-import styles from './ourintiativeslanding.module.css';
+import {
+	CardContainer,
+	Container,
+	CardContent,
+	CardImage,
+	CardTitle,
+	Grid,
+	Title,
+	UnderLine,
+} from './styles';
 
 const Card = ({ img, title, content }) => (
-	<div className={styles.cardContainer}>
-		<div className={styles.cardImage}>
+	<CardContainer>
+		<CardImage>
 			<img src={img} alt={title} />
-		</div>
-		<div className={styles.cardTitle}>{title}</div>
-		<div className={styles.underline}></div>
-		<div className={styles.cardContent}>{content}</div>
-	</div>
+		</CardImage>
+		<CardTitle>{title}</CardTitle>
+		<UnderLine />
+		<CardContent>{content}</CardContent>
+	</CardContainer>
 );
 
 const OurInitiatives = () => {
 	return (
-		<div className={styles.container}>
-			<div className={styles.title}>Our Initiatives</div>
-			<div className={styles.grid}>
+		<Container
+			style={{ backgroundImage: 'url(/images/our-initiatives-bg.png)' }}
+		>
+			<Title>Our Initiatives</Title>
+			<Grid>
 				<Card
 					img="/images/our-initiative-1.png"
 					title="Research Challenge"
@@ -31,8 +42,8 @@ const OurInitiatives = () => {
 					title="Virtual Platform"
 					content="There are several online learning opportunities, even mobile apps and simulation games, developed for/by…"
 				/>
-			</div>
-		</div>
+			</Grid>
+		</Container>
 	);
 };
 
