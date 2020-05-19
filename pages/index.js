@@ -7,9 +7,17 @@ import ResourcesAndStories from '../src/components/Landing/ResourcesAndStories';
 import GetInvolved from '../src/components/Landing/GetInvolved';
 import Footer from '../src/components/common/Footer';
 
+import styled from 'styled-components';
+
+const Page = styled.div`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+`;
+
 const IndexPage = () => {
 	return (
-		<div>
+		<Page>
 			<Head>
 				<title>People Beyond Borders</title>
 			</Head>
@@ -20,7 +28,7 @@ const IndexPage = () => {
 			<ResourcesAndStories />
 			<GetInvolved />
 			<Footer />
-		</div>
+		</Page>
 	);
 };
 
