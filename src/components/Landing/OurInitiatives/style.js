@@ -21,7 +21,7 @@ export const Container = styled.div`
 		height: auto;
 		background-size: cover;
 		background-position: center;
-		min-width: 425px;
+		min-width: 100vw;
 	}
 `;
 
