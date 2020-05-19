@@ -8,7 +8,7 @@ import {
 	ItemNumbers,
 	LinkButton,
 	Title,
-} from './styles';
+} from './style';
 
 const GridItem = ({ img, title, numbers }) => (
 	<ItemContainer>

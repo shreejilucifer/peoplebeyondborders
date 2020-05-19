@@ -7,7 +7,7 @@ import {
 	Grid,
 	Title,
 	UnderLine,
-} from './styles';
+} from './style';
 
 const Card = ({ img, title, content }) => (
 	<CardContainer>
