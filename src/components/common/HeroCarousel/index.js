@@ -1,20 +1,19 @@
-import styles from './herocarousel.module.css';
+import { Container, Content, Title, Data, LearnMore } from './styles';
 
 const HeroCarousel = () => {
 	return (
-		<div className={styles.container}>
-			<div className={styles.content}>
-				<div className={styles.title}>
+		<Container style={{ backgroundImage: `url(/images/banner.png)` }}>
+			<Content>
+				<Title>
 					Empowering displaced communities & refugees - is our call to action.
-				</div>
-				<div className={styles.data}>
+				</Title>
+				<Data>
 					We aim to transform the way the displaced communities and refugees
 					connect with each other as well as with the world around them.
-				</div>
-				<div className={styles.learnmore}>Learn more</div>
-			</div>
-			<img src={require('../../../images/banner.png')} alt="banner" />
-		</div>
+				</Data>
+				<LearnMore>Learn more</LearnMore>
+			</Content>
+		</Container>
 	);
 };
 

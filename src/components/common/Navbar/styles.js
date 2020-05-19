@@ -4,6 +4,7 @@ export const Wrapper = styled.div`
 	position: absolute;
 	z-index: 1;
 	width: 100%;
+	max-width: 1440px;
 	background-image: linear-gradient(
 		to bottom,
 		#ffffff 15%,
@@ -17,7 +18,6 @@ export const Container = styled.div`
 	padding-right: 40px;
 	display: grid;
 	grid-template-columns: 25% 75%;
-
 	/* Laptop */
 	@media (max-width: 1024px) {
 		height: 100px;
@@ -91,6 +91,7 @@ export const Links = styled.a`
 	font-size: 18px;
 	font-family: 'Poppins';
 	font-weight: 500;
+	cursor: pointer;
 	/* Laptop */
 	@media (max-width: 1024px) {
 		font-size: 15px;
@@ -118,6 +119,7 @@ export const LinksButton = styled.div`
 	padding-right: 10px;
 	border-radius: 8px;
 	font-weight: 500;
+	cursor: pointer;
 	/* Laptop */
 	@media (max-width: 1024px) {
 		font-size: 15px;
