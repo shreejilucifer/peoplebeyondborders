@@ -2,12 +2,14 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
 	max-width: 1440px;
+	width: 80%;
 	padding-left: 40px;
 	padding-right: 40px;
 	/* Laptop */
 	@media (max-width: 1024px) {
 		padding-left: 35px;
 		padding-right: 35px;
+		width: auto;
 	}
 	/* Tablet */
 	@media (max-width: 768px) {
@@ -24,7 +26,7 @@ export const Container = styled.div`
 export const Title = styled.div`
 	color: var(--black);
 	font-family: 'Rubik';
-	font-size: 65px;
+	font-size: 60px;
 	font-weight: 500;
 	font-stretch: normal;
 	font-style: normal;
@@ -80,10 +82,23 @@ export const ItemContainer = styled.div`
 `;
 
 export const ItemImageContainer = styled.div`
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	& > img {
+		width: 80%;
+	}
 	/* Tablet */
 	@media (max-width: 768px) {
 		& > img {
-			width: 100%;
+			width: 80%;
+		}
+	}
+	/* Mobile */
+	@media (max-width: 425px) {
+		& > img {
+			width: auto;
 		}
 	}
 `;
@@ -114,7 +129,7 @@ export const ItemTitle = styled.div`
 
 export const ItemNumbers = styled.div`
 	margin-top: 10px;
-	font-size: 55px;
+	font-size: 45px;
 	color: var(--primary);
 	font-family: 'Poppins';
 	font-weight: 500;
@@ -142,8 +157,7 @@ export const Content = styled.div`
 	margin-top: 40px;
 	width: 95%;
 	font-family: 'Muli';
-	font-size: 30px;
-	font-weight: normal;
+	font-size: 24px;
 	font-stretch: normal;
 	font-style: normal;
 	line-height: 1.26;
@@ -172,24 +186,31 @@ export const Content = styled.div`
 export const LinkButton = styled.div`
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 40px;
-	width: 222px;
-	height: 65px;
+	margin-top: 80px;
+	width: 200px;
+	height: 55px;
 	border-radius: 15px;
 	background-color: var(--secondary);
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	font-family: Muli;
-	font-size: 25px;
-	font-weight: 600;
+	font-family: 'Muli';
+	font-size: 20px;
+	font-weight: 400;
 	font-stretch: normal;
 	font-style: normal;
 	line-height: 1.24;
 	letter-spacing: normal;
 	text-align: center;
 	color: var(--black);
+
+	&:hover {
+		cursor: pointer;
+		font-weight: 500;
+		background-color: var(--primary);
+	}
+
 	/* Laptop */
 	@media (max-width: 1024px) {
 		height: 55px;

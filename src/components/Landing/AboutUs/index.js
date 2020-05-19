@@ -5,10 +5,10 @@ import {
 	ItemContainer,
 	ItemImageContainer,
 	ItemTitle,
-	ItemNumbers,
 	LinkButton,
 	Title,
 } from './style';
+import Ticker from './Ticker';
 
 const GridItem = ({ img, title, numbers }) => (
 	<ItemContainer>
@@ -16,7 +16,7 @@ const GridItem = ({ img, title, numbers }) => (
 			<img src={img} alt="title" />
 		</ItemImageContainer>
 		<ItemTitle>{title}</ItemTitle>
-		<ItemNumbers>{numbers}</ItemNumbers>
+		<Ticker start={0} end={parseInt(numbers)} separator="," />
 	</ItemContainer>
 );
 
@@ -28,17 +28,17 @@ const AboutUs = () => {
 				<GridItem
 					img="/images/aboutus-2010.png"
 					title="DISPLACED IN 2010"
-					numbers="43,700,000"
+					numbers="43700000"
 				/>
 				<GridItem
 					img="/images/aboutus-2015.png"
 					title="DISPLACED IN 2015"
-					numbers="65,000,000"
+					numbers="65000000"
 				/>
 				<GridItem
 					img="/images/aboutus-2020.png"
 					title="DISPLACED IN 2020"
-					numbers="70,754,326"
+					numbers="70754326"
 				/>
 			</Grid>
 			<Content>

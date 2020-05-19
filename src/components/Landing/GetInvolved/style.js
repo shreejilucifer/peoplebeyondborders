@@ -29,7 +29,7 @@ export const LinksContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	width: 90%;
-	justify-content: center;
+	justify-content: space-evenly;
 	justify-self: center;
 	/* Mobile */
 	@media (max-width: 425px) {
@@ -38,7 +38,7 @@ export const LinksContainer = styled.div`
 `;
 
 export const Title = styled.div`
-	font-size: 65px;
+	font-size: 50px;
 	font-weight: 500;
 	line-height: 1.18;
 	font-family: 'Rubik';
@@ -93,7 +93,7 @@ export const CardContainer = styled.div`
 `;
 
 export const CardTitle = styled.div`
-	font-size: 30px;
+	font-size: 25px;
 	font-weight: 600;
 	font-family: 'Muli';
 	text-align: left;

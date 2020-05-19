@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
 export const Title = styled.div`
 	text-align: center;
 	font-family: 'Rubik';
-	font-size: 65px;
+	font-size: 55px;
 	font-weight: 500;
 	font-stretch: normal;
 	font-style: normal;
@@ -18,7 +18,7 @@ export const Title = styled.div`
 	letter-spacing: normal;
 	text-align: center;
 	color: var(--black);
-	margin-top: 10px;
+	margin-top: 30px;
 	/* Laptop */
 	@media (max-width: 1024px) {
 		font-size: 55px;
@@ -36,7 +36,7 @@ export const Title = styled.div`
 
 export const Container = styled.div`
 	margin-top: 40px;
-	width: 90%;
+	width: 100%;
 	/* Mobile */
 	@media (max-width: 425px) {
 		width: 100%;
@@ -72,7 +72,9 @@ export const HorizontalCardContainer = styled.div`
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	align-items: center;
+	&:nth-child(1) {
+		align-items: flex-end;
+	}
 `;
 
 export const VerticalCardContainer = styled.div`
@@ -82,6 +84,7 @@ export const VerticalCardContainer = styled.div`
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+
 	/* Mobile */
 	@media (max-width: 425px) {
 		width: 100%;
@@ -156,9 +159,9 @@ export const HorizontalCardTitle = styled.div`
 	margin-top: 15px;
 	width: 50%;
 	color: var(--white);
-	font-weight: bold;
+	font-weight: 500;
 	font-family: 'Muli';
-	font-size: 2rem;
+	font-size: 30px;
 
 	/* Mobile */
 	@media (max-width: 425px) {
@@ -172,9 +175,9 @@ export const VerticalCardTitle = styled.div`
 	margin-top: 15px;
 	width: 75%;
 	color: var(--white);
-	font-weight: bold;
+	font-weight: 500;
 	font-family: 'Muli';
-	font-size: 2rem;
+	font-size: 30px;
 
 	/* Mobile */
 	@media (max-width: 425px) {
@@ -194,11 +197,15 @@ export const HorizontalCardLinkbtn = styled.div`
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	font-size: 1rem;
+	font-size: 15px;
 	font-family: 'Muli';
-	font-weight: 600;
+	font-weight: 400;
 	text-align: center;
-	cursor: pointer;
+	&:hover {
+		cursor: pointer;
+		background-color: var(--primary);
+		font-weight: 500;
+	}
 `;
 
 export const VerticalCardLinkbtn = styled.div`
@@ -213,11 +220,15 @@ export const VerticalCardLinkbtn = styled.div`
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	font-size: 1rem;
+	font-size: 15px;
 	font-family: 'Muli';
-	font-weight: 600;
+	font-weight: 400;
 	text-align: center;
-	cursor: pointer;
+	&:hover {
+		cursor: pointer;
+		background-color: var(--primary);
+		font-weight: 500;
+	}
 	/* Mobile */
 	@media (max-width: 425px) {
 		width: 25%;
@@ -227,21 +238,40 @@ export const VerticalCardLinkbtn = styled.div`
 export const LinkButton = styled.div`
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 40px;
+	margin-top: 80px;
+	width: 200px;
+	height: 55px;
+	border-radius: 15px;
+	background-color: var(--secondary);
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	font-family: 'Muli';
-	font-weight: 600;
-	font-size: 1.2rem;
-	background-color: var(--secondary);
-	border-radius: 10px;
-	height: 35px;
-	width: 200px;
-	cursor: pointer;
+	font-size: 20px;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.24;
+	letter-spacing: normal;
+	text-align: center;
+	color: var(--black);
+	/* Laptop */
+	@media (max-width: 1024px) {
+		height: 55px;
+		width: 190px;
+		font-size: 20px;
+	}
+	/* Tablet */
+	@media (max-width: 768px) {
+		height: 45px;
+		width: 180px;
+		font-size: 15px;
+	}
 	/* Mobile */
 	@media (max-width: 425px) {
-		width: 50%;
+		height: 35px;
+		width: 170px;
+		font-size: 15px;
 	}
 `;

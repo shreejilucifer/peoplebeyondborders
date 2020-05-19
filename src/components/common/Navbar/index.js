@@ -34,7 +34,6 @@ const Navbar = () => {
 					<Route path="/discoverus" text="Discover us" />
 					<Route path="/ourinitiatives" text="Our Initiatives" />
 					<Route path="/resourcesandstories" text="Resources and Stories" />
-					<Route path="/ourteam" text="Our Team" />
 					<Route path="/connectwithus" text="Connect with us" />
 					<LinksButton>Get Involved</LinksButton>
 				</Routes>
@@ -58,7 +57,6 @@ const Navbar = () => {
 						<Route path="/discoverus" text="Discover us" />
 						<Route path="/ourinitiatives" text="Our Initiatives" />
 						<Route path="/resourcesandstories" text="Resources and Stories" />
-						<Route path="/ourteam" text="Our Team" />
 						<Route path="/connectwithus" text="Connect with us" />
 						<LinksButton>Get Involved</LinksButton>
 					</DrawerContainer>

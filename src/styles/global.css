@@ -23,9 +23,11 @@
 	--secondary: #b7d335;
 	--black: #000000;
 	--white: #ffffff;
+	--titleSize: 65px;
+	--titleWeight: 400;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;500;600;700&family=Poppins:wght@500&family=Rubik:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;500;600;700&family=Poppins:wght@400;500&family=Rubik:wght@400;500;700&display=swap');
 
 body::-webkit-scrollbar {
 	display: none;

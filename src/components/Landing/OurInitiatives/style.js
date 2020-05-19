@@ -31,7 +31,7 @@ export const Title = styled.div`
 	padding-top: 160px;
 	font-family: 'Rubik';
 	font-weight: 500;
-	font-size: 65px;
+	font-size: 55px;
 	line-height: 1.18;
 	color: var(--white);
 	/* Laptop */
@@ -52,13 +52,17 @@ export const Title = styled.div`
 `;
 
 export const Grid = styled.div`
-	margin-top: 50px;
+	margin-top: 25px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
 	/* Laptop */
 	@media (max-width: 1024px) {
 		margin-top: 20px;
+		width: auto;
 	}
 	/* Tablet */
 	@media (max-width: 768px) {
@@ -73,7 +77,7 @@ export const Grid = styled.div`
 `;
 
 export const CardContainer = styled.div`
-	height: 400px;
+	height: 430px;
 	width: 300px;
 	background-color: var(--white);
 	border-radius: 15px;
@@ -110,6 +114,14 @@ export const CardContainer = styled.div`
 `;
 
 export const CardImage = styled.div`
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	& > img {
+		height: 80%;
+	}
+
 	/* Laptop */
 	@media (max-width: 1024px) {
 		height: 50%;
@@ -133,8 +145,8 @@ export const CardImage = styled.div`
 
 export const CardTitle = styled.div`
 	font-family: 'Muli';
-	font-size: 24px;
-	font-weight: bold;
+	font-size: 20px;
+	font-weight: 600;
 	font-stretch: normal;
 	font-style: normal;
 	line-height: 1.25;
@@ -170,6 +182,7 @@ export const UnderLine = styled.div`
 
 export const CardContent = styled.div`
 	margin-top: 20px;
+	width: 80%;
 	font-family: 'Muli';
 	font-size: 15px;
 	font-weight: normal;
@@ -179,6 +192,8 @@ export const CardContent = styled.div`
 	letter-spacing: normal;
 	text-align: center;
 	color: var(--black);
+	height: 3.5rem;
+	overflow-y: hidden;
 	/* Laptop */
 	@media (max-width: 1024px) {
 		font-size: 15px;

@@ -18,8 +18,10 @@
 		"next-compose-plugins": "^2.2.0",
 		"next-optimized-images": "^2.6.0",
 		"react": "^16.13.1",
+		"react-countup": "^4.3.3",
 		"react-dom": "^16.13.1",
 		"react-responsive-carousel": "^3.2.5",
+		"react-visibility-sensor": "^5.1.1",
 		"styled-components": "^5.1.0",
 		"webp-loader": "^0.6.0"
 	},

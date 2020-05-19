@@ -4,7 +4,7 @@ export const Container = styled.div`
 	max-width: 1440px;
 	width: 100%;
 	background-image: url(/images/footer-bg.png);
-	height: 480px;
+	height: 580px;
 	background-position: top;
 	background-size: cover;
 	display: flex;
@@ -22,13 +22,13 @@ export const Content = styled.div`
 `;
 
 export const Brand = styled.div`
-	height: 80px;
+	height: 100px;
 	width: 200px;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 40px;
+	margin-bottom: 60px;
 
 	& > img {
 		height: 100%;
@@ -63,10 +63,15 @@ export const Links = styled.a`
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	font-size: 20px;
+	font-size: 15px;
 	color: var(--var);
-	cursor: pointer;
+
 	font-family: 'Muli';
+
+	&:hover {
+		cursor: pointer;
+	}
+
 	/* Mobile */
 	@media (max-width: 425px) {
 		font-size: 15px;
@@ -82,10 +87,10 @@ export const Links = styled.a`
 export const Social = styled.div`
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 	width: 50%;
-	margin-bottom: 40px;
+	margin-bottom: 70px;
 	/* Mobile */
 	@media (max-width: 425px) {
 		width: 100%;
@@ -98,14 +103,14 @@ export const Icons = styled.a`
 	justify-content: center;
 	align-items: center;
 	height: 40px;
-
+	margin-left: 10px;
 	& > img {
 		height: 100%;
 	}
 `;
 
 export const Copyright = styled.div`
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 	font-family: 'Muli';
 	opacity: 0.8;
 	color: var(--black);

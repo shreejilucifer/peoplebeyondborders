@@ -19,18 +19,20 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.div`
-	padding-top: 200px;
-	margin-left: 60px;
-	width: 40%;
+	padding-top: 250px;
+	margin-left: 100px;
+	width: 38%;
 	/* Laptop */
 	@media (max-width: 1024px) {
 		padding-top: 150px;
 		width: 45%;
+		margin-left: 75px;
 	}
 	/* Tablet */
 	@media (max-width: 768px) {
 		padding-top: 100px;
 		width: 55%;
+		margin-left: 50px;
 	}
 	/* Mobile */
 	@media (max-width: 425px) {
@@ -41,10 +43,10 @@ export const Content = styled.div`
 `;
 
 export const Title = styled.div`
-	font-size: 50px;
+	font-size: 45px;
 	color: var(--white);
 	font-family: 'Rubik';
-	font-weight: bold;
+	font-weight: 600;
 	line-height: 1.19;
 	text-align: left;
 	/* Laptop */
@@ -62,14 +64,15 @@ export const Title = styled.div`
 `;
 
 export const Data = styled.div`
-	font-size: 25px;
+	width: 95%;
+	font-size: 22px;
 	color: var(--white);
 	font-stretch: normal;
 	font-style: normal;
 	letter-spacing: normal;
 	text-align: left;
 	line-height: 1.31;
-	font-weight: 600;
+	font-weight: 500;
 	font-family: 'Muli';
 	/* Laptop */
 	@media (max-width: 1024px) {
@@ -90,15 +93,21 @@ export const LearnMore = styled.div`
 	background-color: var(--secondary);
 	color: var(--black);
 	font-family: 'Muli';
-	font-size: 25px;
-	font-weight: 600;
+	font-size: 20px;
+	font-weight: 500;
 	line-height: 1.24;
 	text-align: center;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	margin-top: 30px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-top: 40px;
 	border-radius: 15px;
-	cursor: pointer;
+
+	&:hover {
+		cursor: pointer;
+		font-weight: 600;
+		background-color: var(--primary);
+	}
+
 	/* Laptop */
 	@media (max-width: 1024px) {
 		font-size: 20px;

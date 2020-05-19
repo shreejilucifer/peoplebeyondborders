@@ -1,4 +1,4 @@
-import { Container, Content, Title, Data, LearnMore } from './styles';
+import { Container, Content, Title, Data, LearnMore } from './style';
 
 const HeroCarousel = () => {
 	return (
