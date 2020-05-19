@@ -1,61 +1,54 @@
-import styles from './footer.module.css';
+import {
+	Brand,
+	Container,
+	Links,
+	Content,
+	Copyright,
+	Routes,
+	Social,
+	Icons,
+} from './style';
 import Link from 'next/link';
 
 const Route = ({ path, text }) => (
 	<Link href={path}>
-		<a className={styles.links}>{text}</a>
+		<Links>{text}</Links>
 	</Link>
 );
 
 const Footer = () => {
 	return (
-		<div className={styles.container}>
-			<div className={styles.content}>
-				<div className={styles.brand}>
+		<Container>
+			<Content>
+				<Brand>
 					<img src="/images/logo.png" alt="people beyond borders" />
-				</div>
-				<div className={styles.routes}>
+				</Brand>
+				<Routes>
 					<Route path="/discoverus" text="Discover us" />
 					<Route path="/ourinitiatives" text="Our Initiatives" />
 					<Route path="/resourcesandstories" text="Resources and Stories" />
 					<Route path="/ourteam" text="Our Team" />
 					<Route path="/connectwithus" text="Connect with us" />
-				</div>
-				<div className={styles.social}>
-					<a
-						className={styles.icons}
-						href="https://facebook.com/"
-						target="_blank"
-					>
+				</Routes>
+				<Social>
+					<Icons href="https://facebook.com/" target="_blank">
 						<img alt="social" src="/images/facebook.png" />
-					</a>
-					<a
-						className={styles.icons}
-						href="https://instagram.com/"
-						target="_blank"
-					>
+					</Icons>
+					<Icons href="https://instagram.com/" target="_blank">
 						<img alt="social" src="/images/instagram.png" />
-					</a>
-					<a
-						className={styles.icons}
-						href="https://youtube.com/"
-						target="_blank"
-					>
+					</Icons>
+					<Icons href="https://youtube.com/" target="_blank">
 						<img alt="social" src="/images/youtube.png" />
-					</a>
-					<a
-						className={styles.icons}
-						href="https://linkedin.com/"
-						target="_blank"
-					>
+					</Icons>
+					<Icons href="https://linkedin.com/" target="_blank">
 						<img alt="social" src="/images/linkedin.png" />
-					</a>
-				</div>
-				<div className={styles.copyright}>
+					</Icons>
+				</Social>
+				<Copyright>
 					© {new Date().getFullYear()} People Beyond Borders All rights reserved
-				</div>
-			</div>
-		</div>
+				</Copyright>
+			</Content>
+		</Container>
 	);
 };
 

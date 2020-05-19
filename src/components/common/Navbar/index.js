@@ -8,7 +8,7 @@ import {
 	MobileContainer,
 	Hamburger,
 	DrawerContainer,
-} from './styles';
+} from './style';
 import Link from 'next/link';
 import { useState } from 'react';
 
