@@ -55,10 +55,12 @@ export const Grid = styled.div`
 	/* Laptop */
 	@media (max-width: 1024px) {
 		margin-top: 35px;
+		width: 85%;
 	}
 	/* Tablet */
 	@media (max-width: 768px) {
 		margin-top: 30px;
+		width: 90%;
 	}
 	/* Mobile */
 	@media (max-width: 425px) {
@@ -165,7 +167,8 @@ export const Content = styled.div`
 	/* Laptop */
 	@media (max-width: 1024px) {
 		margin-top: 35px;
-		font-size: 25px;
+		font-size: 20px;
+		width: 90%;
 	}
 	/* Tablet */
 	@media (max-width: 768px) {

@@ -58,8 +58,9 @@ const HeroCarousel = () => {
 				<LearnMore>Learn more</LearnMore>
 			</Content>
 			<DotContainer>
-				{images.map((slide, i) => (
+				{images.map((c, i) => (
 					<div
+						key={i}
 						style={
 							i === slideIndex
 								? { backgroundColor: '#54bdd8' }

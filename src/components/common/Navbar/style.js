@@ -51,13 +51,13 @@ export const BrandContainer = styled.div`
 	/* Laptop */
 	@media (max-width: 1024px) {
 		& > img {
-			width: 70%;
+			width: 90%;
 		}
 	}
 	/* Tablet */
 	@media (max-width: 768px) {
 		& > img {
-			width: 70%;
+			width: 90%;
 		}
 	}
 	/* Mobile */

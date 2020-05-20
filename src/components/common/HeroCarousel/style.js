@@ -58,9 +58,10 @@ export const Overlay = styled.img`
 
 export const DotContainer = styled.div`
 	position: absolute;
-	height: 100%;
+	height: 800px;
 	top: 0;
 	right: 0;
+	margin-left: auto;
 	margin-right: 10px;
 	display: flex;
 	flex-direction: column;
@@ -71,6 +72,14 @@ export const DotContainer = styled.div`
 		width: 10px;
 		margin-bottom: 10px;
 		border-radius: 5px;
+	}
+	/* Laptop */
+	@media (max-width: 1024px) {
+		height: 625px;
+	}
+	/* Tablet */
+	@media (max-width: 768px) {
+		height: 526px;
 	}
 `;
 
