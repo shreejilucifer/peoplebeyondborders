@@ -2,20 +2,18 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
 	max-width: 1440px;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-top: 40px;
 `;
 
 export const Title = styled.div`
 	text-align: center;
-	font-family: 'Rubik';
-	font-size: 55px;
-	font-weight: 500;
-	font-stretch: normal;
-	font-style: normal;
-	line-height: 1.18;
-	letter-spacing: normal;
+	font-family: var(--titleFont);
+	font-size: var(--titleSize);
+
 	text-align: center;
 	color: var(--black);
 	margin-top: 30px;
@@ -36,7 +34,7 @@ export const Title = styled.div`
 
 export const Container = styled.div`
 	margin-top: 40px;
-	width: 100%;
+	width: 90%;
 	/* Mobile */
 	@media (max-width: 425px) {
 		width: 100%;
@@ -57,6 +55,10 @@ export const Grid = styled.div`
 
 export const Column = styled.div`
 	width: 50%;
+	margin-right: 20px;
+	&:nth-child(2) {
+		margin-right: 0px;
+	}
 	/* Mobile */
 	@media (max-width: 425px) {
 		width: 100%;
@@ -68,7 +70,7 @@ export const Column = styled.div`
 `;
 
 export const HorizontalCardContainer = styled.div`
-	height: 240px;
+	height: 300px;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -78,8 +80,8 @@ export const HorizontalCardContainer = styled.div`
 `;
 
 export const VerticalCardContainer = styled.div`
-	height: 320px;
-	width: 95%;
+	height: 500px;
+	width: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -93,8 +95,8 @@ export const VerticalCardContainer = styled.div`
 `;
 
 export const HorizontalCardActual = styled.div`
-	width: 95%;
-	height: 95%;
+	width: 97%;
+	height: 290px;
 	border-radius: 10px;
 	background-position: top;
 	background-size: cover;
@@ -238,7 +240,7 @@ export const VerticalCardLinkbtn = styled.div`
 export const LinkButton = styled.div`
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 80px;
+	margin-top: 40px;
 	width: 200px;
 	height: 55px;
 	border-radius: 15px;

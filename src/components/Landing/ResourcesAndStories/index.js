@@ -54,30 +54,38 @@ const ResourcesAndStories = () => {
 							title="Teaching Among Turmoil"
 						/>
 						<Grid>
-							<VerticalCard
-								country="Syria"
-								title="Little Mischief Maker"
-								img="/images/resources-v-1.png"
-							/>
-							<VerticalCard
-								country="Syria"
-								title="A Better Future"
-								img="/images/resources-v-2.png"
-							/>
+							<Column>
+								<VerticalCard
+									country="Syria"
+									title="Little Mischief Maker"
+									img="/images/resources-v-1.png"
+								/>
+							</Column>
+							<Column>
+								<VerticalCard
+									country="Syria"
+									title="A Better Future"
+									img="/images/resources-v-2.png"
+								/>
+							</Column>
 						</Grid>
 					</Column>
 					<Column>
 						<Grid>
-							<VerticalCard
-								country="Syria"
-								title="Feathered Friends"
-								img="/images/resources-v-3.png"
-							/>
-							<VerticalCard
-								country="Syria"
-								title="The Power of Chat"
-								img="/images/resources-v-4.png"
-							/>
+							<Column>
+								<VerticalCard
+									country="Syria"
+									title="Feathered Friends"
+									img="/images/resources-v-3.png"
+								/>
+							</Column>
+							<Column>
+								<VerticalCard
+									country="Syria"
+									title="The Power of Chat"
+									img="/images/resources-v-4.png"
+								/>
+							</Column>
 						</Grid>
 						<HorizontalCard
 							country="Syria"

@@ -17,7 +17,7 @@ export const Container = styled.div`
 	padding-left: 40px;
 	padding-right: 40px;
 	display: grid;
-	grid-template-columns: 25% 75%;
+	grid-template-columns: 15% 85%;
 	/* Laptop */
 	@media (max-width: 1024px) {
 		height: 100px;
@@ -46,7 +46,7 @@ export const BrandContainer = styled.div`
 	align-items: center;
 	height: 100%;
 	& > img {
-		width: 40%;
+		width: 90%;
 	}
 	/* Laptop */
 	@media (max-width: 1024px) {

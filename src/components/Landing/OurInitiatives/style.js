@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+	margin-top: 40px;
 	max-width: 1440px;
 	width: 100%;
 	height: 855px;
@@ -28,26 +29,23 @@ export const Container = styled.div`
 
 export const Title = styled.div`
 	text-align: center;
-	padding-top: 160px;
-	font-family: 'Rubik';
-	font-weight: 500;
-	font-size: 55px;
-	line-height: 1.18;
+	margin-top: 160px;
+	font-family: var(--titleFont);
+	font-size: var(--titleSize);
 	color: var(--white);
 	/* Laptop */
 	@media (max-width: 1024px) {
 		font-size: 55px;
-		padding-top: 110px;
+		margin-top: 100px;
 	}
 	/* Tablet */
 	@media (max-width: 768px) {
 		font-size: 45px;
-		padding-top: 80px;
+		margin-top: 80px;
 	}
 	/* Mobile */
 	@media (max-width: 425px) {
 		font-size: 35px;
-		padding-top: 170px;
 	}
 `;
 

@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-	margin-top: 40px;
+	margin-top: 80px;
 	display: grid;
 	grid-template-columns: 50% 50%;
 	max-width: 1440px;
+	width: 100%;
 	/* Mobile */
 	@media (max-width: 425px) {
 		display: flex;
@@ -38,10 +39,9 @@ export const LinksContainer = styled.div`
 `;
 
 export const Title = styled.div`
-	font-size: 50px;
-	font-weight: 500;
+	font-family: var(--titleFont);
+	font-size: var(--titleSize);
 	line-height: 1.18;
-	font-family: 'Rubik';
 	text-align: left;
 	color: var(--black);
 	/* Laptop */

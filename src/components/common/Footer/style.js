@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
 	max-width: 1440px;
 	width: 100%;
+	margin-top: 40px;
 	background-image: url(/images/footer-bg.png);
 	height: 580px;
 	background-position: top;

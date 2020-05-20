@@ -18,13 +18,36 @@
 	src: url('/fonts/Gilroy-ExtraBold.woff');
 } */
 
+@font-face {
+	font-family: 'Rubik-Bold';
+	src: url('/fonts/Rubik-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Rubik-Medium';
+	src: url('/fonts/Rubik-Medium.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Muli-Regular';
+	src: url('/fonts/Muli-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Muli-SemiBold';
+	src: url('/fonts/Muli-Regular.ttf') format('truetype');
+}
+
 :root {
 	--primary: #53bbd5;
 	--secondary: #b7d335;
 	--black: #000000;
 	--white: #ffffff;
-	--titleSize: 65px;
+	--titleFont: 'Rubik-Medium';
+	--titleSize: 55px;
 	--titleWeight: 400;
+	--subtitleFont: 'Muli-Regular';
+	--bodyFont: 'Muli-Regular';
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;500;600;700&family=Poppins:wght@400;500&family=Rubik:wght@400;500;700&display=swap');

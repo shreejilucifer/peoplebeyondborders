@@ -16,7 +16,7 @@ const GridItem = ({ img, title, numbers }) => (
 			<img src={img} alt="title" />
 		</ItemImageContainer>
 		<ItemTitle>{title}</ItemTitle>
-		<Ticker start={0} end={parseInt(numbers)} separator="," />
+		<Ticker numbers={numbers} />
 	</ItemContainer>
 );
 

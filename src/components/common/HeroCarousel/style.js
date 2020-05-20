@@ -16,11 +16,14 @@ export const Container = styled.div`
 	@media (max-width: 768px) {
 		height: 525px;
 	}
+	/* Mobile */
+	@media (max-width: 425px) {
+		width: 100%;
+	}
 `;
 
 export const Images = styled.div`
 	height: 800px;
-	width: 100%;
 	max-width: 1440px;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -39,7 +42,6 @@ export const Overlay = styled.img`
 	position: absolute;
 	z-index: -1;
 	top: 800px;
-	width: 100%;
 	max-width: 1440px;
 	margin-left: auto;
 	margin-right: auto;
@@ -54,37 +56,51 @@ export const Overlay = styled.img`
 	}
 `;
 
+export const DotContainer = styled.div`
+	position: absolute;
+	height: 100%;
+	top: 0;
+	right: 0;
+	margin-right: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	& > div {
+		height: 10px;
+		width: 10px;
+		margin-bottom: 10px;
+		border-radius: 5px;
+	}
+`;
+
 export const Content = styled.div`
 	padding-top: 250px;
 	margin-left: 100px;
-	width: 38%;
 	/* Laptop */
 	@media (max-width: 1024px) {
 		padding-top: 150px;
-		width: 45%;
 		margin-left: 75px;
 	}
 	/* Tablet */
 	@media (max-width: 768px) {
 		padding-top: 100px;
-		width: 55%;
 		margin-left: 50px;
 	}
 	/* Mobile */
 	@media (max-width: 425px) {
 		padding-top: 90px;
 		margin-left: 20px;
-		width: 90%;
 	}
 `;
 
 export const Title = styled.div`
-	font-size: 45px;
-	color: var(--white);
-	font-family: 'Rubik';
-	font-weight: 600;
 	line-height: 1.19;
 	text-align: left;
+	color: var(--white);
+	font-size: 45px;
+	font-family: var(--titleFont);
+	width: 528px;
 	/* Laptop */
 	@media (max-width: 1024px) {
 		font-size: 40px;
@@ -96,20 +112,19 @@ export const Title = styled.div`
 	/* Mobile */
 	@media (max-width: 425px) {
 		font-size: 33px;
+		width: 300px;
 	}
 `;
 
 export const Data = styled.div`
-	width: 95%;
+	margin-top: 5px;
+	width: 38%;
 	font-size: 22px;
 	color: var(--white);
-	font-stretch: normal;
-	font-style: normal;
-	letter-spacing: normal;
+	font-family: var(--subtitleFont);
 	text-align: left;
 	line-height: 1.31;
 	font-weight: 500;
-	font-family: 'Muli';
 	/* Laptop */
 	@media (max-width: 1024px) {
 		font-size: 20px;
@@ -121,6 +136,7 @@ export const Data = styled.div`
 	/* Mobile */
 	@media (max-width: 425px) {
 		font-size: 15px;
+		width: 300px;
 	}
 `;
 

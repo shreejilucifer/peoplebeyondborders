@@ -5,8 +5,10 @@ import {
 	Overlay,
 	Title,
 	Data,
+	DotContainer,
 	LearnMore,
 } from './style';
+import { useState } from 'react';
 import Carousel from 'nuka-carousel';
 
 const images = [
@@ -16,16 +18,25 @@ const images = [
 ];
 
 const HeroCarousel = () => {
+	const [slideIndex, setSlideIndex] = useState(0);
+
 	return (
 		<Container>
 			<Carousel
-				autoplayInterval={5000}
+				slideIndex={slideIndex}
+				afterSlide={(slideIndex) => setSlideIndex(slideIndex)}
+				autoplayInterval={15000}
 				transitionMode="fade"
 				wrapAround={true}
 				autoplay
 				withoutControls
 				dragging={false}
-				style={{ position: 'absolute', zIndex: -1 }}
+				style={{
+					position: 'absolute',
+					zIndex: -1,
+					width: '100%',
+					maxWidth: '1440px',
+				}}
 			>
 				{images.map((url, i) => (
 					<Images
@@ -46,6 +57,18 @@ const HeroCarousel = () => {
 				</Data>
 				<LearnMore>Learn more</LearnMore>
 			</Content>
+			<DotContainer>
+				{images.map((slide, i) => (
+					<div
+						style={
+							i === slideIndex
+								? { backgroundColor: '#54bdd8' }
+								: { backgroundColor: 'white' }
+						}
+					/>
+				))}
+			</DotContainer>
+
 			<Overlay src="/images/shape-01.svg" />
 		</Container>
 	);

@@ -1,11 +1,9 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+	background-color: var(--white);
 	margin-top: 25px;
 	max-width: 1440px;
-	width: 80%;
-	padding-left: 40px;
-	padding-right: 40px;
 	/* Laptop */
 	@media (max-width: 1024px) {
 		padding-left: 35px;
@@ -26,9 +24,8 @@ export const Container = styled.div`
 
 export const Title = styled.div`
 	color: var(--black);
-	font-family: 'Rubik';
-	font-size: 60px;
-	font-weight: 500;
+	font-family: var(--titleFont);
+	font-size: var(--titleSize);
 	font-stretch: normal;
 	font-style: normal;
 	line-height: 1.19;
@@ -52,6 +49,9 @@ export const Grid = styled.div`
 	margin-top: 40px;
 	display: grid;
 	grid-template-columns: 33.33% 33.33% 33.33%;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
 	/* Laptop */
 	@media (max-width: 1024px) {
 		margin-top: 35px;
@@ -128,7 +128,7 @@ export const ItemTitle = styled.div`
 	}
 `;
 
-export const ItemNumbers = styled.div`
+export const ItemNumbers = styled.span`
 	margin-top: 10px;
 	font-size: 45px;
 	color: var(--primary);
@@ -156,15 +156,12 @@ export const Content = styled.div`
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 40px;
-	width: 95%;
-	font-family: 'Muli';
+	width: 79%;
+	font-family: var(--bodyFont);
 	font-size: 24px;
-	font-stretch: normal;
-	font-style: normal;
-	line-height: 1.26;
-	letter-spacing: normal;
-	text-align: center;
 	color: var(--black);
+	line-height: 39px;
+	text-align: center;
 	/* Laptop */
 	@media (max-width: 1024px) {
 		margin-top: 35px;

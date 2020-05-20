@@ -3,26 +3,14 @@ import { ItemNumbers } from './style';
 import CountUp from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
 
-const Ticker = ({ className, ...rest }) => {
-	const [viewPortEntered, setViewPortEntered] = useState(false);
-
+const Ticker = ({ numbers }) => {
 	return (
-		<CountUp {...rest} start={viewPortEntered ? null : 0}>
-			{({ countUpRef }) => {
-				return (
-					<VisibilitySensor
-						active={!viewPortEntered}
-						onChange={(isVisible) => {
-							if (isVisible) {
-								setViewPortEntered(true);
-							}
-						}}
-						delayedCall
-					>
-						<ItemNumbers ref={countUpRef} />
-					</VisibilitySensor>
-				);
-			}}
+		<CountUp start={0} end={parseInt(numbers)} redraw separator="," useEasing>
+			{({ countUpRef, start }) => (
+				<VisibilitySensor onChange={start} delayedCall>
+					<ItemNumbers ref={countUpRef} />
+				</VisibilitySensor>
+			)}
 		</CountUp>
 	);
 };
