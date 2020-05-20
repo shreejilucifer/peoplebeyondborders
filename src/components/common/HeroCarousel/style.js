@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-	height: 825px;
+	height: 800px;
 	background-size: contain;
 	background-repeat: no-repeat;
 	max-width: 1440px;
@@ -15,6 +15,41 @@ export const Container = styled.div`
 	/* Tablet */
 	@media (max-width: 768px) {
 		height: 525px;
+	}
+`;
+
+export const Images = styled.div`
+	height: 800px;
+	width: 100%;
+	max-width: 1440px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	/* Laptop */
+	@media (max-width: 1024px) {
+		height: 625px;
+	}
+	/* Tablet */
+	@media (max-width: 768px) {
+		height: 525px;
+	}
+`;
+
+export const Overlay = styled.img`
+	position: absolute;
+	top: 800px;
+	width: 100%;
+	max-width: 1440px;
+	margin-left: auto;
+	margin-right: auto;
+	transform: translateY(-100%);
+	/* Laptop */
+	@media (max-width: 1024px) {
+		top: 625px;
+	}
+	/* Tablet */
+	@media (max-width: 768px) {
+		top: 526px;
 	}
 `;
 

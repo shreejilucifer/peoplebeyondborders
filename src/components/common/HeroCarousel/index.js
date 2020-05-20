@@ -1,8 +1,41 @@
-import { Container, Content, Title, Data, LearnMore } from './style';
+import {
+	Container,
+	Content,
+	Images,
+	Overlay,
+	Title,
+	Data,
+	LearnMore,
+} from './style';
+import Carousel from 'nuka-carousel';
+
+const images = [
+	'/images/banner-2.jpg',
+	'/images/banner-1.jpg',
+	'/images/banner-3.jpg',
+];
 
 const HeroCarousel = () => {
 	return (
-		<Container style={{ backgroundImage: `url(/images/banner.png)` }}>
+		<Container>
+			<Carousel
+				autoplayInterval={5000}
+				transitionMode="fade"
+				wrapAround={true}
+				autoplay
+				withoutControls
+				dragging={false}
+				style={{ position: 'absolute', zIndex: -1 }}
+			>
+				{images.map((url, i) => (
+					<Images
+						key={i}
+						style={{
+							backgroundImage: `url(${url})`,
+						}}
+					/>
+				))}
+			</Carousel>
 			<Content>
 				<Title>
 					Empowering displaced communities & refugees - is our call to action.
@@ -13,6 +46,7 @@ const HeroCarousel = () => {
 				</Data>
 				<LearnMore>Learn more</LearnMore>
 			</Content>
+			<Overlay src="/images/shape-01.svg" />
 		</Container>
 	);
 };
