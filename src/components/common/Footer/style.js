@@ -64,12 +64,13 @@ export const Links = styled.a`
 	justify-content: center;
 	align-items: center;
 	font-size: 15px;
-	color: var(--var);
+	color: var(--black);
 
 	font-family: 'Muli';
 
 	&:hover {
 		cursor: pointer;
+		font-weight: 600;
 	}
 
 	/* Mobile */

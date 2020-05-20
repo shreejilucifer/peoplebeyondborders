@@ -118,5 +118,9 @@ export const ArrowContainer = styled.div`
 	color: var(--white);
 	background-color: var(--secondary);
 	border-radius: 20px;
-	cursor: pointer;
+	&:hover {
+		cursor: pointer;
+		font-weight: 600;
+		background-color: var(--primary);
+	}
 `;

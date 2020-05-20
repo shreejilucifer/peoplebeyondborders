@@ -256,6 +256,11 @@ export const LinkButton = styled.div`
 	letter-spacing: normal;
 	text-align: center;
 	color: var(--black);
+	&:hover {
+		cursor: pointer;
+		font-weight: 600;
+		background-color: var(--primary);
+	}
 	/* Laptop */
 	@media (max-width: 1024px) {
 		height: 55px;

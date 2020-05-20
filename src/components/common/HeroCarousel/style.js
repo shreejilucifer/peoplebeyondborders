@@ -37,6 +37,7 @@ export const Images = styled.div`
 
 export const Overlay = styled.img`
 	position: absolute;
+	z-index: -1;
 	top: 800px;
 	width: 100%;
 	max-width: 1440px;
@@ -136,7 +137,6 @@ export const LearnMore = styled.div`
 	padding-bottom: 15px;
 	margin-top: 40px;
 	border-radius: 15px;
-
 	&:hover {
 		cursor: pointer;
 		font-weight: 600;
