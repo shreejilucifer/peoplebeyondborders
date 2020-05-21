@@ -15,6 +15,12 @@ const Page = styled.div`
 	align-items: center;
 `;
 
+const images = [
+	'/images/banner-2.jpg',
+	'/images/banner-1.jpg',
+	'/images/banner-3.jpg',
+];
+
 const IndexPage = () => {
 	return (
 		<Page>
@@ -22,7 +28,7 @@ const IndexPage = () => {
 				<title>People Beyond Borders</title>
 			</Head>
 			<Navbar />
-			<HeroCarousel />
+			<HeroCarousel images={images} />
 			<AboutUs />
 			<OurInitiatives />
 			<ResourcesAndStories />

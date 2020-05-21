@@ -10,11 +10,17 @@ import Footer from '../src/components/common/Footer';
 import DarkSection from '../src/components/common/DarkSection';
 import LightSection from '../src/components/common/LightSection';
 
+const images = [
+	'/images/banner-2.jpg',
+	'/images/banner-1.jpg',
+	'/images/banner-3.jpg',
+];
+
 const DiscoverUsPage = () => {
 	return (
 		<div className={styles.wrapper}>
 			<Navbar />
-			<HeroCarousel />
+			<HeroCarousel images={images} />
 
 			<LightSection>
 				<WhatWeDo />

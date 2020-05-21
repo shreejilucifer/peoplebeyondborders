@@ -8,14 +8,20 @@ import {
 	MobileContainer,
 	Hamburger,
 	DrawerContainer,
+	Underline,
 } from './style';
 import Link from 'next/link';
+import { withRouter } from 'next/router';
 import { useState } from 'react';
 
-const Route = ({ path, text }) => (
-	<Link href={path}>
-		<Links>{text}</Links>
-	</Link>
+const Route = ({ path, text, active }) => (
+	<React.Fragment>
+		<Link href={path}>
+			<Links active={active}>
+				<div>{text}</div>
+			</Links>
+		</Link>
+	</React.Fragment>
 );
 
 const Brand = () => (
@@ -24,19 +30,42 @@ const Brand = () => (
 	</BrandContainer>
 );
 
-const Navbar = () => {
+const Navbar = ({ router }) => {
 	const [isOpen, setIsOpen] = useState(false);
+	const checkActive = (route) => {
+		return router.pathname === route;
+	};
 	return (
 		<Wrapper>
 			<Container>
 				<Brand />
 				<Routes>
 					<div></div>
-					<Route path="/discoverus" text="Discover us" />
-					<Route path="/ourinitiatives" text="Our Initiatives" />
-					<Route path="/resourcesandstories" text="Resources and Stories" />
-					<Route path="/ourteam" text="Our Team" />
-					<Route path="/connectwithus" text="Connect with us" />
+					<Route
+						path="/discoverus"
+						text="Discover us"
+						active={checkActive('/discoverus')}
+					/>
+					<Route
+						path="/ourinitiatives"
+						text="Our Initiatives"
+						active={checkActive('/ourinitiatives')}
+					/>
+					<Route
+						path="/resourcesandstories"
+						text="Resources and Stories"
+						active={checkActive('/resourcesandstories')}
+					/>
+					<Route
+						path="/ourteam"
+						text="Our Team"
+						active={checkActive('/ourteam')}
+					/>
+					<Route
+						path="/connectwithus"
+						text="Connect with us"
+						active={checkActive('/connectwithus')}
+					/>
 					<LinksButton>Get Involved</LinksButton>
 				</Routes>
 			</Container>
@@ -69,4 +98,4 @@ const Navbar = () => {
 	);
 };
 
-export default Navbar;
+export default withRouter(Navbar);

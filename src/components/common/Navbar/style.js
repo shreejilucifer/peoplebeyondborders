@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Wrapper = styled.div`
 	position: absolute;
@@ -70,20 +70,20 @@ export const BrandContainer = styled.div`
 `;
 
 export const Routes = styled.div`
-	margin-top: 20px;
-	height: 73px;
+	margin-top: auto;
+	margin-bottom: auto;
+	height: 100%;
 	display: grid;
 	grid-template-columns: 18% 12% 15% 18% 10% 15% 12%;
 	width: 100%;
+	align-items: center;
 	/* Laptop */
 	@media (max-width: 1024px) {
-		height: 63px;
 		grid-template-columns: 3% 12% 15% 25% 10% 20% 15%;
 	}
 	/* Tablet */
 	@media (max-width: 768px) {
 		margin-top: 15px;
-		height: 53px;
 		grid-template-columns: 3% 12% 15% 25% 10% 20% 15%;
 	}
 	/* Mobile */
@@ -93,8 +93,8 @@ export const Routes = styled.div`
 `;
 
 export const Links = styled.a`
-	display: flex;
-	flex-direction: row;
+	display: inline-flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	font-size: 100%;
@@ -102,11 +102,21 @@ export const Links = styled.a`
 	font-weight: 400;
 	text-align: center;
 	width: 100%;
+	height: 100%;
+	& > div {
+		height: 15%;
+		border-bottom-left-radius: 2px;
+		border-bottom-right-radius: 2px;
+		${(props) =>
+			props.active &&
+			css`
+				border-bottom: 3px solid var(--primary);
+			`};
+	}
 	&:hover {
 		cursor: pointer;
 		font-weight: 500;
 	}
-
 	/* Laptop */
 	@media (max-width: 1024px) {
 	}
@@ -125,8 +135,6 @@ export const Links = styled.a`
 `;
 
 export const LinksButton = styled.div`
-	margin-top: auto;
-	margin-bottom: auto;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -135,7 +143,7 @@ export const LinksButton = styled.div`
 	font-family: 'Poppins';
 	background-color: var(--secondary);
 	border-radius: 8px;
-	height: 50%;
+	height: 30%;
 	text-align: center;
 	&:hover {
 		cursor: pointer;
