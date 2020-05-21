@@ -15,20 +15,20 @@ export const Wrapper = styled.div`
 export const Container = styled.div`
 	height: 120px;
 	padding-left: 40px;
-	padding-right: 40px;
+	padding-right: 30px;
 	display: grid;
 	grid-template-columns: 15% 85%;
 	/* Laptop */
 	@media (max-width: 1024px) {
 		height: 100px;
 		padding-left: 35px;
-		padding-right: 35px;
+		padding-right: 10px;
 	}
 	/* Tablet */
 	@media (max-width: 768px) {
 		height: 80px;
 		padding-left: 20px;
-		padding-right: 20px;
+		padding-right: 10px;
 	}
 	/* Mobile */
 	@media (max-width: 425px) {
@@ -63,24 +63,28 @@ export const BrandContainer = styled.div`
 	/* Mobile */
 	@media (max-width: 425px) {
 		height: auto;
+		& > img {
+			width: 60%;
+		}
 	}
 `;
 
 export const Routes = styled.div`
 	margin-top: 20px;
 	height: 73px;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	align-items: center;
+	display: grid;
+	grid-template-columns: 18% 12% 15% 18% 10% 15% 12%;
+	width: 100%;
 	/* Laptop */
 	@media (max-width: 1024px) {
 		height: 63px;
+		grid-template-columns: 3% 12% 15% 25% 10% 20% 15%;
 	}
 	/* Tablet */
 	@media (max-width: 768px) {
 		margin-top: 15px;
 		height: 53px;
+		grid-template-columns: 3% 12% 15% 25% 10% 20% 15%;
 	}
 	/* Mobile */
 	@media (max-width: 425px) {
@@ -89,10 +93,15 @@ export const Routes = styled.div`
 `;
 
 export const Links = styled.a`
-	font-size: 18px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-size: 100%;
 	font-family: 'Poppins';
 	font-weight: 400;
-	margin-right: 35px;
+	text-align: center;
+	width: 100%;
 	&:hover {
 		cursor: pointer;
 		font-weight: 500;
@@ -100,16 +109,14 @@ export const Links = styled.a`
 
 	/* Laptop */
 	@media (max-width: 1024px) {
-		font-size: 14px;
 	}
 	/* Tablet */
 	@media (max-width: 768px) {
-		font-size: 11px;
-		margin-right: 20px;
+		font-size: 70%;
 	}
 	/* Mobile */
 	@media (max-width: 425px) {
-		display: flex;
+		height: 25%;
 		width: 100%;
 		justify-content: center;
 		align-items: center;
@@ -118,15 +125,18 @@ export const Links = styled.a`
 `;
 
 export const LinksButton = styled.div`
-	font-size: 18px;
+	margin-top: auto;
+	margin-bottom: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-size: 100%;
 	font-family: 'Poppins';
 	background-color: var(--secondary);
-	line-height: 40px;
-	padding-left: 15px;
-	padding-right: 15px;
 	border-radius: 8px;
-	font-weight: 400;
-
+	height: 50%;
+	text-align: center;
 	&:hover {
 		cursor: pointer;
 		background-color: var(--primary);
@@ -135,18 +145,16 @@ export const LinksButton = styled.div`
 
 	/* Laptop */
 	@media (max-width: 1024px) {
-		font-size: 15px;
-		line-height: 30px;
 		border-radius: 5px;
 	}
 	/* Tablet */
 	@media (max-width: 768px) {
-		font-size: 11px;
-		line-height: 20px;
 		border-radius: 3px;
+		font-size: 70%;
 	}
 	/* Mobile */
 	@media (max-width: 425px) {
+		height: 25%;
 		display: flex;
 		width: 100%;
 		justify-content: center;

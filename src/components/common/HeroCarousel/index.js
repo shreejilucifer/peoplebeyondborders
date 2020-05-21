@@ -13,8 +13,8 @@ import Carousel from 'nuka-carousel';
 
 const images = [
 	'/images/banner-2.jpg',
-	'/images/banner-1.jpg',
-	'/images/banner-3.jpg',
+	// '/images/banner-1.jpg',
+	// '/images/banner-3.jpg',
 ];
 
 const HeroCarousel = () => {

@@ -84,11 +84,11 @@ export const DotContainer = styled.div`
 `;
 
 export const Content = styled.div`
-	padding-top: 250px;
+	padding-top: 245px;
 	margin-left: 100px;
 	/* Laptop */
 	@media (max-width: 1024px) {
-		padding-top: 150px;
+		padding-top: 210px;
 		margin-left: 75px;
 	}
 	/* Tablet */
@@ -104,15 +104,18 @@ export const Content = styled.div`
 `;
 
 export const Title = styled.div`
-	line-height: 1.19;
 	text-align: left;
 	color: var(--white);
-	font-size: 45px;
-	font-family: var(--titleFont);
-	width: 528px;
+	font-size: 42px;
+	font-family: 'Rubik-Bold';
+	letter-spacing: 1px;
+	width: 40%;
+	line-height: 1.2;
 	/* Laptop */
 	@media (max-width: 1024px) {
-		font-size: 40px;
+		font-size: 30px;
+		width: 40%;
+		line-height: 1.1;
 	}
 	/* Tablet */
 	@media (max-width: 768px) {
@@ -131,12 +134,15 @@ export const Data = styled.div`
 	font-size: 22px;
 	color: var(--white);
 	font-family: var(--subtitleFont);
-	text-align: left;
 	line-height: 1.31;
-	font-weight: 500;
+	word-spacing: 1px;
 	/* Laptop */
 	@media (max-width: 1024px) {
-		font-size: 20px;
+		margin-top: 15px;
+		font-size: 15px;
+		line-height: 1.2;
+		word-spacing: 3px;
+		width: 39%;
 	}
 	/* Tablet */
 	@media (max-width: 768px) {
@@ -150,18 +156,17 @@ export const Data = styled.div`
 `;
 
 export const LearnMore = styled.div`
-	width: 200px;
+	width: 13%;
 	background-color: var(--secondary);
 	color: var(--black);
-	font-family: 'Muli';
-	font-size: 20px;
-	font-weight: 500;
-	line-height: 1.24;
+	font-family: 'Muli-SemiBold';
+	font-size: 15px;
 	text-align: center;
 	padding-top: 15px;
 	padding-bottom: 15px;
+	font-weight: 600;
 	margin-top: 40px;
-	border-radius: 15px;
+	border-radius: 10px;
 	&:hover {
 		cursor: pointer;
 		font-weight: 600;
@@ -170,8 +175,11 @@ export const LearnMore = styled.div`
 
 	/* Laptop */
 	@media (max-width: 1024px) {
-		font-size: 20px;
-		width: 150px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		font-size: 15px;
+		width: 13%;
+		border-radius: 8px;
 	}
 	/* Tablet */
 	@media (max-width: 768px) {

@@ -33,11 +33,11 @@ export const Title = styled.div`
 	text-align: center;
 	/* Laptop */
 	@media (max-width: 1024px) {
-		font-size: 55px;
+		font-size: 40px;
 	}
 	/* Tablet */
 	@media (max-width: 768px) {
-		font-size: 45px;
+		font-size: 40px;
 	}
 	/* Mobile */
 	@media (max-width: 425px) {
@@ -187,7 +187,7 @@ export const Content = styled.div`
 export const LinkButton = styled.div`
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 80px;
+	margin-top: 40px;
 	width: 200px;
 	height: 55px;
 	border-radius: 15px;
