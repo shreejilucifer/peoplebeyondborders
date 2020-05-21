@@ -60,6 +60,7 @@ body::-webkit-scrollbar-thumb {
 :root {
 	--primary: #53bbd5;
 	--secondary: #b7d335;
+	--highlight: #8da323;
 	--black: #000000;
 	--white: #ffffff;
 	--titleFont: 'Rubik-Medium';

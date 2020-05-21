@@ -1,17 +1,16 @@
 import {
 	Container,
-	Content,
 	Images,
 	Overlay,
-	Title,
-	Data,
 	DotContainer,
-	LearnMore,
+	WaveContainer,
 } from './style';
 import { useState } from 'react';
 import Carousel from 'nuka-carousel';
 
-const HeroCarousel = ({ images }) => {
+import { IndexContent } from './Content';
+
+const HeroCarousel = ({ images, content, overlayImg }) => {
 	const [slideIndex, setSlideIndex] = useState(0);
 
 	return (
@@ -41,16 +40,7 @@ const HeroCarousel = ({ images }) => {
 					/>
 				))}
 			</Carousel>
-			<Content>
-				<Title>
-					Empowering displaced communities & refugees - is our call to action.
-				</Title>
-				<Data>
-					We aim to transform the way the displaced communities and refugees
-					connect with each other as well as with the world around them.
-				</Data>
-				<LearnMore>Learn more</LearnMore>
-			</Content>
+			<IndexContent visible={content} />
 			<DotContainer>
 				{images.map((c, i) => (
 					<div
@@ -63,8 +53,9 @@ const HeroCarousel = ({ images }) => {
 					/>
 				))}
 			</DotContainer>
-
-			<Overlay src="/images/shape-01.svg" />
+			<WaveContainer overlayImg={overlayImg}>
+				<img src={overlayImg} />
+			</WaveContainer>
 		</Container>
 	);
 };

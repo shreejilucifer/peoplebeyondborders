@@ -9,6 +9,7 @@ import Footer from '../src/components/common/Footer';
 
 import styled from 'styled-components';
 
+import { IndexContent } from '../src/components/common/HeroCarousel/Content';
 const Page = styled.div`
 	display: flex;
 	flex-direction: column;
@@ -28,7 +29,11 @@ const IndexPage = () => {
 				<title>People Beyond Borders</title>
 			</Head>
 			<Navbar />
-			<HeroCarousel images={images} />
+			<HeroCarousel
+				images={images}
+				content={true}
+				overlayImg="/images/shape-01.svg"
+			/>
 			<AboutUs />
 			<OurInitiatives />
 			<ResourcesAndStories />

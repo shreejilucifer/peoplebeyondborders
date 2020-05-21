@@ -38,21 +38,41 @@ export const Images = styled.div`
 	}
 `;
 
-export const Overlay = styled.img`
+export const WaveContainer = styled.div`
 	position: absolute;
+	float: bottom;
 	z-index: -1;
-	top: 800px;
+	-webkit-transform: translate3d(0, -15%, 0);
+	width: 100%;
 	max-width: 1440px;
-	margin-left: auto;
-	margin-right: auto;
-	transform: translateY(-100%);
+
+	& > img {
+		height: auto;
+		width: 100%;
+		max-width: 1440px;
+	}
+
 	/* Laptop */
 	@media (max-width: 1024px) {
-		top: 625px;
 	}
 	/* Tablet */
 	@media (max-width: 768px) {
-		top: 526px;
+		height: 100%;
+	}
+	/* Mobile */
+	@media (max-width: 425px) {
+		height: 74%;
+
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+		top: 0;
+		left: 0;
+		display: flex;
+		flex-direction: column;
+
+		& > img {
+			margin-top: auto;
+		}
 	}
 `;
 
