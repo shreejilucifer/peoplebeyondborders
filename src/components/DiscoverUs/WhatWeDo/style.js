@@ -11,7 +11,7 @@ export const SubTitle = styled.div`
 	margin-right: auto;
 	margin-top: 40px;
 	font-family: 'Muli-SemiBold';
-	font-size: 50px;
+	font-size: 2em;
 	line-height: 60px;
 	text-align: center;
 	color: var(--primary);
@@ -23,8 +23,8 @@ export const Content = styled.div`
 	margin-right: auto;
 	margin-top: 40px;
 	font-family: 'Muli-Regular';
-	font-size: 29px;
-	line-height: 35px;
+	font-size: 1.25em;
+	line-height: 1.2em;
 	text-align: center;
 `;
 

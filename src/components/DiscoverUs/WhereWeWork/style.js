@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
 	margin-top: 40px;
@@ -19,12 +19,16 @@ export const WavesBottom = styled.img`
 export const Content = styled.div`
 	padding-top: 40px;
 	padding-bottom: 10px;
-	background: rgb(83, 187, 213);
-	background: linear-gradient(
-		180deg,
-		rgba(69, 190, 206, 1) 10%,
-		rgba(175, 208, 104, 1) 100%
-	);
+	${(props) =>
+		props.waves &&
+		css`
+			background: rgb(83, 187, 213);
+			background: linear-gradient(
+				180deg,
+				rgba(69, 190, 206, 1) 10%,
+				rgba(175, 208, 104, 1) 100%
+			);
+		`}
 `;
 
 export const WhiteBG = styled.div`
@@ -45,10 +49,15 @@ export const WriteUp = styled.div`
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 80px;
-	margin-bottom: 40px;
+	margin-bottom: 80px;
 	font-family: 'Muli-Regular';
-	font-size: 30px;
-	line-height: 35px;
+	font-size: 1.5rem;
+	line-height: 1.3em;
 	text-align: center;
-	color: var(--white);
+	color: var(--black);
+	${(props) =>
+		props.waves &&
+		css`
+			color: var(--white);
+		`}
 `;

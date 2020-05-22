@@ -1,5 +1,17 @@
 import styled from 'styled-components';
 
+export const Title = styled.div`
+	width: 91%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	font-family: 'Muli-Regular';
+	font-size: 28px;
+	line-height: 35px;
+	text-align: center;
+`;
+
 export const Container = styled.div`
 	margin-top: 40px;
 	max-width: 1440px;
@@ -42,24 +54,23 @@ export const TypeCaption = styled.div`
 `;
 
 export const Data = styled.div`
-	width: 91%;
+	width: 85%;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 40px;
 	margin-bottom: 40px;
 	font-family: 'Muli-Regular';
-	font-size: 28px;
-	line-height: 35px;
+	font-size: 1.25em;
+	line-height: 1.3em;
 	text-align: justify;
 `;
 
 export const Inspire = styled.div`
-	width: 91%;
+	width: 85%;
 	align-self: center;
 	margin-top: 40px;
 	font-family: 'Muli-SemiBold';
-	font-size: 35px;
-	line-height: 45px;
+	font-size: 1.5em;
 	text-align: left;
 	display: flex;
 	flex-direction: row;

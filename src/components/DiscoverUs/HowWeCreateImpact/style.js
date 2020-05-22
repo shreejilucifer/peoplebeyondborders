@@ -11,8 +11,8 @@ export const Content = styled.div`
 	margin-right: auto;
 	margin-top: 40px;
 	font-family: 'Muli-Regular';
-	font-size: 29px;
-	line-height: 35px;
+	font-size: 1.5em;
+	line-height: 1.3em;
 	text-align: center;
 `;
 
@@ -46,7 +46,7 @@ export const PostContent = styled.div`
 
 export const PostTitle = styled.div`
 	font-family: 'Muli-SemiBold';
-	font-size: 35px;
+	font-size: 2em;
 	font-weight: 600;
 	line-height: 45px;
 	text-align: left;
@@ -68,7 +68,7 @@ export const PostData = styled.div`
 	width: 90%;
 	margin-top: 15px;
 	font-family: 'Muli-Regular';
-	font-size: 22px;
+	font-size: 1.3em;
 	line-height: 1.3;
 	text-align: justify;
 `;

@@ -33,7 +33,7 @@ const Brand = () => (
 const Navbar = ({ router }) => {
 	const [isOpen, setIsOpen] = useState(false);
 	const checkActive = (route) => {
-		return router.pathname === route;
+		return router.pathname.includes(route);
 	};
 	return (
 		<Wrapper>

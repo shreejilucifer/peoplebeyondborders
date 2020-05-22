@@ -160,9 +160,9 @@ export const Content = styled.div`
 	margin-top: 40px;
 	width: 79%;
 	font-family: var(--bodyFont);
-	font-size: 24px;
+	font-size: 1.25em;
 	color: var(--black);
-	line-height: 39px;
+	line-height: 1.2em;
 	text-align: center;
 	/* Laptop */
 	@media (max-width: 1024px) {

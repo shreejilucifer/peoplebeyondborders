@@ -1,4 +1,5 @@
 import {
+	Title,
 	Container,
 	Content,
 	Data,
@@ -22,7 +23,7 @@ const Displaced = () => {
 	return (
 		<Container>
 			<Content>
-				<Data>Over half of all displaced people are children </Data>
+				<Title>Over half of all displaced people are children </Title>
 				<TypesContainer>
 					<TypeItem caption="Separated from Families" />
 					<TypeItem caption="Risk of Exploitation" />

@@ -64,7 +64,7 @@ body::-webkit-scrollbar-thumb {
 	--black: #000000;
 	--white: #ffffff;
 	--titleFont: 'Rubik-Medium';
-	--titleSize: 45px;
+	--titleSize: 2.5em;
 	--titleSizeLaptop: 40px;
 	--titleSizeMobile: 40px;
 	--titleWeight: 400;

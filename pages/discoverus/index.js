@@ -1,11 +1,11 @@
-import Page from '../src/components/common/Page';
-import HeroCarousel from '../src/components/common/HeroCarousel';
-import WhatWeDo from '../src/components/DiscoverUs/WhatWeDo';
+import Page from '../../src/components/common/Page';
+import HeroCarousel from '../../src/components/common/HeroCarousel';
+import WhatWeDo from '../../src/components/DiscoverUs/WhatWeDo';
 
-import WhereWeWork from '../src/components/DiscoverUs/WhereWeWork';
-import HowWeCreateImpact from '../src/components/DiscoverUs/HowWeCreateImpact';
-import WhyItMatters from '../src/components/DiscoverUs/WhyItMatters';
-import Displaced from '../src/components/DiscoverUs/Displaced';
+import WhereWeWork from '../../src/components/DiscoverUs/WhereWeWork';
+import HowWeCreateImpact from '../../src/components/DiscoverUs/HowWeCreateImpact';
+import WhyItMatters from '../../src/components/DiscoverUs/WhyItMatters';
+import Displaced from '../../src/components/DiscoverUs/Displaced';
 
 const images = ['/images/discoverus-banner-1.jpg'];
 
@@ -18,7 +18,7 @@ const DiscoverUsPage = () => {
 				overlayImg="/images/shape-02.png"
 			/>
 			<WhatWeDo />
-			<WhereWeWork />
+			<WhereWeWork waves={true} />
 			<HowWeCreateImpact />
 			<WhyItMatters />
 			<Displaced />

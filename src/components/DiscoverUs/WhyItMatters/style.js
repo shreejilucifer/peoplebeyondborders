@@ -34,7 +34,7 @@ export const Image = styled.img`
 export const SmallText = styled.div`
 	margin-top: 20px;
 	font-family: 'Poppins';
-	font-size: 20px;
+	font-size: 1em;
 	font-weight: 500;
 	font-stretch: normal;
 	font-style: normal;
@@ -44,8 +44,8 @@ export const SmallText = styled.div`
 `;
 
 export const Numbers = styled.div`
-	margin-top: 20px;
-	font-size: 45px;
+	margin-top: 10px;
+	font-size: 2.5em;
 	color: var(--black);
 	font-family: 'Poppins';
 	font-weight: 500;
@@ -56,13 +56,13 @@ export const Numbers = styled.div`
 `;
 
 export const Data = styled.div`
-	width: 91%;
+	width: 85%;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 40px;
 	margin-bottom: 40px;
 	font-family: 'Muli-Regular';
-	font-size: 29px;
+	font-size: 1.5em;
 	line-height: 35px;
 	text-align: center;
 `;
