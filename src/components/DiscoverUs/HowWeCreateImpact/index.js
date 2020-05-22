@@ -83,4 +83,34 @@ connections and personal growth through
 arts.`,
 		imgurl: '/images/creative-process.jpg',
 	},
+	{
+		title: 'Participatory Action Research',
+		content: `Sometimes what people think or say is very
+different from what they do. How do
+we approach their doing? All of our work is
+rooted in Participatory Action Research
+(PAR), so that our action plans are based on
+the real-life actions of the displaced people
+we work with. For us, research is dynamic
+rather than static where all involved
+stakeholders engage as co-researchers
+constantly transforming their own spaces by
+bringing knowledge alive! PAR sets out to be
+participatory based on the perspective that
+“knowledge are plural”
+
+, which further
+
+challenges some of the assumptions about
+displacement/refugee homogeneity in
+conventional studies. While many tend to
+consider displaced people as a homogenous
+entity, our research articulates that the
+displaced are internally diverse and there are
+power dynamics between them that shape
+their intra-social cohesion. We develop our
+initiatives to channelize this diversity and
+plural voices in innovative ways.`,
+		imgurl: '/images/creative-process.jpg',
+	},
 ];

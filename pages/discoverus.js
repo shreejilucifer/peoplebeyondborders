@@ -1,28 +1,17 @@
-import Head from 'next/head';
-import Navbar from '../src/components/common/Navbar';
+import Page from '../src/components/common/Page';
 import HeroCarousel from '../src/components/common/HeroCarousel';
 import WhatWeDo from '../src/components/DiscoverUs/WhatWeDo';
-import Footer from '../src/components/common/Footer';
 
-import styled from 'styled-components';
 import WhereWeWork from '../src/components/DiscoverUs/WhereWeWork';
 import HowWeCreateImpact from '../src/components/DiscoverUs/HowWeCreateImpact';
+import WhyItMatters from '../src/components/DiscoverUs/WhyItMatters';
+import Displaced from '../src/components/DiscoverUs/Displaced';
 
 const images = ['/images/discoverus-banner-1.jpg'];
 
-const Page = styled.div`
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-`;
-
 const DiscoverUsPage = () => {
 	return (
-		<Page>
-			<Head>
-				<title>Discover Us - People Beyond Borders</title>
-			</Head>
-			<Navbar />
+		<Page title="Discover Us - People Beyond Borders">
 			<HeroCarousel
 				images={images}
 				content={false}
@@ -31,7 +20,8 @@ const DiscoverUsPage = () => {
 			<WhatWeDo />
 			<WhereWeWork />
 			<HowWeCreateImpact />
-			<Footer />
+			<WhyItMatters />
+			<Displaced />
 		</Page>
 	);
 };
