@@ -11,7 +11,7 @@ export const Content = styled.div`
 	margin-right: auto;
 	margin-top: 40px;
 	font-family: 'Muli-Regular';
-	font-size: 1.5em;
+	font-size: 1.3em;
 	line-height: 1.3em;
 	text-align: center;
 `;
