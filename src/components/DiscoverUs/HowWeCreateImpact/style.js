@@ -3,6 +3,10 @@ import styled from 'styled-components';
 export const Container = styled.div`
 	margin-top: 40px;
 	max-width: 1440px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 `;
 
 export const Content = styled.div`
@@ -14,6 +18,10 @@ export const Content = styled.div`
 	font-size: 1.3em;
 	line-height: 1.3em;
 	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 `;
 
 export const Highlight = styled.span`
@@ -71,4 +79,11 @@ export const PostData = styled.div`
 	font-size: 1.3em;
 	line-height: 1.3;
 	text-align: justify;
+`;
+
+export const SectionImage = styled.img`
+	width: 40%;
+	align-self: center;
+	margin-left: 100px;
+	margin-top: 80px;
 `;

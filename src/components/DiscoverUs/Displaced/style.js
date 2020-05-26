@@ -39,7 +39,6 @@ export const Type = styled.div`
 	margin-bottom: 40px;
 
 	& > img {
-		border: 1px solid black;
 		height: 200px;
 		width: 200px;
 		margin-bottom: 1vh;
