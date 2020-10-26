@@ -7,6 +7,7 @@ import {
 	PostImage,
 	PostTitle,
 	PostData,
+	SectionImage,
 } from './style';
 import SectionTitle from '../../common/SectionTitle';
 
@@ -15,14 +16,18 @@ const HowWeCreateImpact = () => {
 		<Container>
 			<SectionTitle color="black">How we create impact</SectionTitle>
 			<Content>
-				People Beyond Borders is a bridge, co-creating safe spaces and
-				opportunities for displaced communities and refugees to connect with
-				each other as well as build on resources and support systems. We work to
-				find contextual and durable solutions to tackle the root causes of some
-				of the world’s biggest challenges. We believe in the power of coming
-				together, similar to how seemingly small, individual pieces of{' '}
-				<Highlight>puzzle</Highlight> fit to show us the bigger picture.
+				<span>
+					People Beyond Borders is a bridge, co-creating safe spaces and
+					opportunities for displaced communities and refugees to connect with
+					each other as well as build on resources and support systems. We work
+					to find contextual and durable solutions to tackle the root causes of
+					some of the world’s biggest challenges. We believe in the power of
+					coming together, similar to how seemingly small, individual pieces of{' '}
+					<Highlight>puzzle</Highlight> fit to show us the bigger picture.
+				</span>
+				<SectionImage src="/images/how-we-create-impact.png" />
 			</Content>
+
 			{data.map(({ title, content, imgurl }, i) => (
 				<PostContainer key={i}>
 					<PostContent>
@@ -111,6 +116,6 @@ power dynamics between them that shape
 their intra-social cohesion. We develop our
 initiatives to channelize this diversity and
 plural voices in innovative ways.`,
-		imgurl: '/images/creative-process.jpg',
+		imgurl: '/images/participatory-action-research.png',
 	},
 ];

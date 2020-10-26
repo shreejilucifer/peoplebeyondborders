@@ -47,6 +47,11 @@ export const Type = styled.div`
     width: 200px;
     margin-bottom: 1vh;
   }
+	& > img {
+		height: 200px;
+		width: 200px;
+		margin-bottom: 1vh;
+	}
 `;
 
 export const TypeCaption = styled.div`

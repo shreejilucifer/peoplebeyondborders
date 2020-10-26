@@ -12,9 +12,9 @@ import {
 } from './style';
 import SectionTitle from '../../common/SectionTitle';
 
-const TypeItem = ({ caption }) => (
+const TypeItem = ({ caption, image }) => (
 	<Type>
-		<img alt={caption} />
+		<img alt={caption} src={image} />
 		<TypeCaption>{caption}</TypeCaption>
 	</Type>
 );
@@ -25,12 +25,21 @@ const Displaced = () => {
 			<Content>
 				<Title>Over half of all displaced people are children </Title>
 				<TypesContainer>
-					<TypeItem caption="Separated from Families" />
-					<TypeItem caption="Risk of Exploitation" />
-					<TypeItem caption="Trafficking" />
-					<TypeItem caption="Smuggling" />
-					<TypeItem caption="Neglect" />
-					<TypeItem caption="Militant Recruitment" />
+					<TypeItem
+						caption="Separated from Families"
+						image="/images/separated-from-families.png"
+					/>
+					<TypeItem
+						caption="Risk of Exploitation"
+						image="/images/risk-of-exploitation.png"
+					/>
+					<TypeItem caption="Trafficking" image="/images/trafficking.png" />
+					<TypeItem caption="Smuggling" image="/images/smuggling.png" />
+					<TypeItem caption="Neglect" image="/images/neglect.png" />
+					<TypeItem
+						caption="Militant Recruitment"
+						image="/images/militant-recruitment.png"
+					/>
 				</TypesContainer>
 				<Data>
 					Either most are internally displaced persons (IDPs) in their home

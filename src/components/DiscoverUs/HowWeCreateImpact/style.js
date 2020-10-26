@@ -14,6 +14,27 @@ export const Content = styled.div`
   font-size: 1.3em;
   line-height: 1.3em;
   text-align: center;
+	margin-top: 40px;
+	max-width: 1440px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+`;
+
+export const Content = styled.div`
+	width: 91%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+	font-family: 'Muli-Regular';
+	font-size: 1.3em;
+	line-height: 1.3em;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 `;
 
 export const Highlight = styled.span`
@@ -93,4 +114,11 @@ export const PostData = styled.div`
   @media (max-width: 425px) {
     width: 100%;
   }
+`;
+
+export const SectionImage = styled.img`
+	width: 40%;
+	align-self: center;
+	margin-left: 100px;
+	margin-top: 80px;
 `;
